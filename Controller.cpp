@@ -4,9 +4,9 @@
 
 Controller::Controller() {}
 
-Controller::Controller(CommandReader comread): comread(comread) {
+Controller::Controller(CommandReader comread) : comread(comread) {
     FieldView fieldw(comread.GetHeight(), comread.GetWidth());
-    this->field = fieldw;
+    this->field = fieldw; //используем коснтруктор поля через наследование, и конструктор перемещения
 }
 
 // ńîçäŕĺě ýęçĺěďë˙đ ęëŕńńŕ ďîëĺ č óćĺ ń íčě đŕáîňŕĺě, čěĺ˙ ďđč ńĺáĺ ýęçĺěďë˙đ ęëŕńńŕ ęîěěŕíä-đčäĺđ čç ěýéíŕ//
@@ -43,6 +43,7 @@ void Controller::Move() {
             break;
 
         default:
+            std::cout << "Incorrect command!" << std::endl;
             SetEnd(true);
             break;
 

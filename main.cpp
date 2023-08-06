@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Controller.h"
-#include "Controller.h"
+#include "CommandReader.h"
 
 int main() {
     CommandReader comreader;
