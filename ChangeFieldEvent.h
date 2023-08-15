@@ -2,6 +2,8 @@
 #include "FieldEvent.h"
 class ChangeFieldEvent :public FieldEvent
 {
-	void execute(void* ptr) override;
+public:
+	ChangeFieldEvent(Field*);
+	void execute() override;
 };
 

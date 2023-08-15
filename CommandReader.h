@@ -1,20 +1,22 @@
 #pragma once
+#include <SFML/Graphics.hpp>
 class CommandReader
 {
 private:
 	int height;
 	int width;
-	char step;
+	sf::Event step;
 
 public:
 	CommandReader();
 
+	void SetSize();
 	void InputHeight();
 	void InputWidth();
-	void InputStep();
+	void InputStep(sf::RenderWindow*);
 
 	int GetHeight();
 	int GetWidth();
-	char GetStep();
+	sf::Event GetStep();
 };
 

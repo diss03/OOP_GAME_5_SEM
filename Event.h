@@ -4,7 +4,6 @@
 class Event 
 { 
 public:
-    virtual void execute(void* ptr) = 0;
-
-    virtual ~Event();
+    virtual void execute() = 0;
+    virtual ~Event() {};
 };

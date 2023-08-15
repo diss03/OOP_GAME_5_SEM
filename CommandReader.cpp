@@ -1,7 +1,23 @@
 #include "CommandReader.h"
 #include <iostream>
+#include <SFML/Graphics.hpp>
 
 CommandReader::CommandReader() {}
+
+void CommandReader::SetSize() {
+    std::cout << "Do you want to set a field size?\n";
+    std::cout << "Y - Yes\n";
+    std::cout << "N - No\n";
+    char res;
+    std::cin >> res;
+    if (res != 'Y' and res != 'y') {
+        this->width = 10;
+        this->height = 10;
+        return;
+    }
+    InputHeight();
+    InputWidth();
+}
 
 void CommandReader::InputHeight() {
     std::cout << "Input field's height: ";
@@ -21,9 +37,9 @@ void CommandReader::InputWidth() {
     }
 }
 
-void CommandReader::InputStep() {
-    std::cout << "Tap on move buttons" << std::endl;
-    std::cin >> step;
+void CommandReader::InputStep(sf::RenderWindow* window) {
+    //std::cout << "Tap on move buttons" << std::endl;
+    window->pollEvent(step);
 }
 
 int CommandReader::GetHeight() {
@@ -34,6 +50,6 @@ int CommandReader::GetWidth() {
     return width;
 }
 
-char CommandReader::GetStep() {
-    return step;
+sf::Event CommandReader::GetStep() {
+    return  step;
 }

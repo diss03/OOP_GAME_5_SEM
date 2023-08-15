@@ -1,11 +1,17 @@
 #pragma once
+#include "Player.h"
 #include "Field.h"
+#include <SFML/Graphics.hpp>
 
-class FieldView : public Field
+class FieldView
 {
 private:
+    int window_hight;
+    int window_width;
+    sf::Vector2f cell_size;
     
 public:
-    void Print();
-    using Field::Field; // Field::Field(...) is now visible as FieldView::Field(char)//
+    FieldView();
+    FieldView(int, int);
+    void Print(Field*, Player*, sf::RenderWindow*, std::vector<sf::Sprite>);
 };

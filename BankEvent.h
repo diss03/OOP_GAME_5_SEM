@@ -3,6 +3,8 @@
 
 class BankEvent :public PlayerEvent
 {
-	void execute(void* ptr) override;
+public:
+	BankEvent(Player*);
+	void execute() override;
 };
 

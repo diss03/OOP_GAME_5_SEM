@@ -2,8 +2,11 @@
 #include "Event.h"
 #include "Field.h"
 
-class FieldEvent : Event
+class FieldEvent :public Event
 {
-	void execute(void* ptr) = 0;
+public:
+	void execute() = 0;
+protected:
+	Field* field;
 };
 

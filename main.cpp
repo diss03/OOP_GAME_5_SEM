@@ -4,8 +4,7 @@
 
 int main() {
     CommandReader comreader;
-    comreader.InputHeight();
-    comreader.InputWidth();
-    Controller ctrl(comreader);
+    comreader.SetSize();
+    Controller ctrl(&comreader);
     ctrl.Move();
 }

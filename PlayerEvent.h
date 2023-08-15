@@ -4,6 +4,9 @@
 
 class PlayerEvent: public Event
 {
-	void execute(void* ptr) = 0;
+public:
+	void execute() = 0;
+protected:
+	Player* player;
 };
 

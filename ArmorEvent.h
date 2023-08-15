@@ -3,6 +3,8 @@
 
 class ArmorEvent :public PlayerEvent
 {
-	void execute(void* ptr) override;
+public:
+	ArmorEvent(Player*);
+	void execute() override;
 };
 

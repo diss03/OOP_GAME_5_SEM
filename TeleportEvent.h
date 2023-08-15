@@ -3,6 +3,8 @@
 
 class TeleportEvent :public FieldEvent
 {
-	void execute(void* ptr) override;
+public:
+	TeleportEvent(Field*);
+	void execute() override;
 };
 

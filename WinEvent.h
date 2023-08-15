@@ -2,6 +2,9 @@
 #include "PlayerEvent.h"
 class WinEvent: public PlayerEvent
 {
-	void execute(void* ptr) override;
+public:
+	WinEvent(Player*);
+	void execute() override;
 };
+
 

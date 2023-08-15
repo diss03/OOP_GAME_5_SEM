@@ -137,6 +137,7 @@
     <ClCompile Include="CommandReader.cpp" />
     <ClCompile Include="Controller.cpp" />
     <ClCompile Include="DamageEvent.cpp" />
+    <ClCompile Include="EventCreator.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="FieldView.cpp" />
     <ClCompile Include="HpEvent.cpp" />
@@ -154,6 +155,7 @@
     <ClInclude Include="Controller.h" />
     <ClInclude Include="DamageEvent.h" />
     <ClInclude Include="Event.h" />
+    <ClInclude Include="EventCreator.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="FieldEvent.h" />
     <ClInclude Include="FieldView.h" />

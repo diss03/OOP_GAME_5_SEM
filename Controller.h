@@ -1,24 +1,20 @@
 #pragma once
 #include "FieldView.h"
 #include "CommandReader.h"
+#include "Player.h"
+#include <SFML/Graphics.hpp>
 
 class Controller 
 {
 private:
-	bool end;
-	FieldView field;
-	CommandReader comread;
+	Field* field;
+	FieldView fieldw;
+	Player* player;
+	CommandReader* comread;
+	
+
 public:
 	Controller();
-	Controller(CommandReader);
+	Controller(CommandReader*);
 	void Move();
-	void Start();
-
-	void SetEnd(bool e) {
-		end = e;
-	}
-
-	bool GetEnd() {
-		return end;
-	}
 };

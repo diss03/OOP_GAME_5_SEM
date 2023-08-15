@@ -1,7 +1,33 @@
 #include "Player.h"
 #include <iostream>
 
-Player::Player(int health = 100, int bank = 0, int armor = 0) : health(health), bank(bank), armor(armor) {
+Player::Player() {
+	health = 100;
+	bank = 0;
+	armor = 0;
+	end = false;
+}
+
+Player::Player(int health, int bank, int armor){
+	this->health = health;
+	this->bank = bank;
+	this->armor = armor;
+	this->end = false;
+}
+
+Player::Player(const Player& copy) : health(copy.health), bank(copy.bank), armor(copy.armor), end(end) {
+}
+
+Player& Player::operator=(const Player& other) {
+	// проверяем на самоприсваивание
+	if (this == &other)
+		return *this;
+	// перезаписываем
+	health = other.health;
+	bank = other.bank;
+	armor = other.armor;
+	end = other.end;
+	return *this;
 }
 
 int Player::GetBank() {
@@ -45,9 +71,14 @@ void Player::SetArmor(int a) {
 		std::cout << "Защита максимальна!" << std::endl;
 		armor = 100;
 	}
+	if (armor < 0)
+	{
+		std::cout << "Armor have been used!" << std::endl;
+		armor = 0;
+	}
 }
 
 
 void Player::SetEnd(bool e) {
-	end = end;
+	end = e;
 }

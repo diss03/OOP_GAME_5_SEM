@@ -3,6 +3,8 @@
 
 class HpEvent :public PlayerEvent
 {
-	void execute(void* ptr) override;
+public:
+	HpEvent(Player*);
+	void execute() override;
 };
 

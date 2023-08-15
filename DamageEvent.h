@@ -3,6 +3,8 @@
 
 class DamageEvent :public PlayerEvent
 {
-	void execute(void* ptr) override;
+public:
+	DamageEvent(Player*);
+	void execute() override;
 };
 
