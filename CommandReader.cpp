@@ -2,7 +2,9 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
-CommandReader::CommandReader() {}
+CommandReader::CommandReader() {
+    new ErrorObserver(this);
+}
 
 void CommandReader::SetSize() {
     std::cout << "Do you want to set a field size?\n";
@@ -23,6 +25,10 @@ void CommandReader::InputHeight() {
     std::cout << "Input field's height: ";
     std::cin >> height;
     if (height <= 0) {
+
+        Message message(ERROR, "incorrect height input", this->info);
+        Notify(message);
+
         std::cout << "Incorrect height. Try again: ";
         InputHeight();
     }
@@ -32,6 +38,10 @@ void CommandReader::InputWidth() {
     std::cout << "Input field's width: ";
     std::cin >> width;
     if (width <= 0) {
+
+        Message message(ERROR, "incorrect width input", this->info);
+        Notify(message);
+
         std::cout << "Incorrect width. Try again: ";
         InputWidth();
     }
@@ -52,4 +62,68 @@ int CommandReader::GetWidth() {
 
 sf::Event CommandReader::GetStep() {
     return  step;
+}
+
+void CommandReader::SetOutput() {
+    char res;
+    std::cout << "Input output way: \n";
+    std::cout << "1: File\n";
+    std::cout << "2: CMD\n";
+    std::cout << "3: Both\n";
+    std::cin >> res;
+    switch (res) {
+    case '1':
+        this->outputs.push_back(OUTPUT::FILEOUT);
+        break;
+    case '2':
+        this->outputs.push_back(OUTPUT::CMD);
+        break;
+    case '3':
+        this->outputs.push_back(OUTPUT::FILEOUT);
+        this->outputs.push_back(OUTPUT::CMD);
+        break;
+    default:
+        this->outputs.push_back(OUTPUT::FILEOUT);
+        this->outputs.push_back(OUTPUT::CMD);
+        break;
+    }
+}
+
+void CommandReader::SetLevels() {
+    char res;
+    std::cout << "Input logging leveles: \n";
+    std::cout << "1: Game\n";
+    std::cout << "2: Status\n";
+    std::cout << "3: Errors\n";
+    std::cout << "4: All\n";
+    std::cin >> res;
+    switch (res) {
+    case '1':
+        this->levels.push_back(LEVEL::GAME);
+        break;
+    case '2':
+        this->levels.push_back(LEVEL::STATUS);
+        break;
+    case '3':
+        this->levels.push_back(LEVEL::ERROR);
+        break;
+    case '4':
+        this->levels.push_back(LEVEL::GAME);
+        this->levels.push_back(LEVEL::STATUS);
+        this->levels.push_back(LEVEL::ERROR);
+        break;
+    default:
+        this->levels.push_back(LEVEL::GAME);
+        this->levels.push_back(LEVEL::STATUS);
+        this->levels.push_back(LEVEL::ERROR);
+        break;
+    }
+}
+
+std::vector <OUTPUT> CommandReader::GetOutputs() {
+    return this->outputs;
+}
+
+std::vector <LEVEL> CommandReader::GetLevels() {
+    return this->levels;
 }

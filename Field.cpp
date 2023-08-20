@@ -65,15 +65,18 @@ Field::Field() {
     InitCells(height, width);
 }
 
-Field::Field(int height, int width, Player* player) {
+Field::Field(int height, int width, Player* player, InfoLog* info) {
     this->height = height;
     this->width = width;
     this->player = player;
+    this->log_info = info;
     InitCells(height, width);
 
-    std::cout << "The overloaded constructor created a playing field with the size: ";
-    std::cout << width << " x " << height << std::endl;
-    std::cout << "the player is located at the coords: " << x << ", " << y << std::endl;
+
+
+    //std::cout << "The overloaded constructor created a playing field with the size: ";
+    //std::cout << width << " x " << height << std::endl;
+    //std::cout << "the player is located at the coords: " << x << ", " << y << std::endl;
 }
 
 // конструктор копирования(объект создается и копируется)
@@ -162,19 +165,26 @@ void Field::MoveLeft() {
     cells[x][y].SetActive(false);
     y = (y - 1 + width) % width;
     if (cells[x][y].GetObject() != Cell::WALL) {
+
+        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        Message message1(GAME, this->log_text, this->log_info);
+        Notify(message1);
+
         if (cells[x][y].GetObject() != Cell::TELEPORT) {
             SetY(y);
             cells[x][y].SetActive(true);
         }
         if (cells[x][y].GetObject() != Cell::WIN)
             cells[x][y].SetObject(Cell::COMMON);
-        cells[x][y].UseEvent();
+        cells[x][y].UseEvent(log_info);
 
 
     }
     else {
         y = (y + 1 + width) % width;
-        std::cout << "Wall" << std::endl;
+        Message message2(ERROR, "player try to move on wall-cell", this->log_info);
+        Notify(message2);
+        /*std::cout << "Wall" << std::endl;*/
         SetY(y);
         cells[x][y].SetActive(true);
     }
@@ -185,19 +195,25 @@ void Field::MoveRight() {
     y = (y + 1) % width;         //êîîðäèíàòû îòñ÷èòûâàþòñÿ ñ 0 (òîãäà ïî ìîäóëþ õîðîøî áåðåòñÿ)
     if (cells[x][y].GetObject() != Cell::WALL)
     { 
+        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        Message message3(GAME, this->log_text, this->log_info);
+        Notify(message3);
+
         if (cells[x][y].GetObject() != Cell::TELEPORT) {
             SetY(y);
             cells[x][y].SetActive(true);
         }
         if (cells[x][y].GetObject() != Cell::WIN)
             cells[x][y].SetObject(Cell::COMMON);
-        cells[x][y].UseEvent();
+        cells[x][y].UseEvent(log_info);
 
     }
     else 
     {
         y = (y - 1 + width) % width;
-        std::cout << "Wall" << std::endl;
+        Message message4(ERROR, "player try to move on wall-cell", this->log_info);
+        Notify(message4);
+        //std::cout << "Wall" << std::endl;
         SetY(y);
         cells[x][y].SetActive(true);
     }
@@ -208,19 +224,25 @@ void Field::MoveUp() {
     x = (x - 1 + height) % height;
     if (cells[x][y].GetObject() != Cell::WALL)
     {
+        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        Message message5(GAME, this->log_text, this->log_info);
+        Notify(message5);
+
         if (cells[x][y].GetObject() != Cell::TELEPORT) {
             SetX(x);
             cells[x][y].SetActive(true);
         }
         if (cells[x][y].GetObject() != Cell::WIN)
             cells[x][y].SetObject(Cell::COMMON);
-        cells[x][y].UseEvent();
+        cells[x][y].UseEvent(log_info);
 
     }
     else 
     {
         x = (x + 1 + height) % height;
-        std::cout << "Wall" << std::endl;
+        Message message6(ERROR, "player try to move on wall-cell", this->log_info);
+        Notify(message6);
+        //std::cout << "Wall" << std::endl;
         SetX(x);
         cells[x][y].SetActive(true);
     }
@@ -231,19 +253,26 @@ void Field::MoveDown() {
     x = (x + 1) % height;
     if (cells[x][y].GetObject()!=Cell::WALL) 
     { //ïðîâåðêà íà âîçìîæíîñòü õîäà
+
+        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        Message message7(GAME, this->log_text, this->log_info);
+        Notify(message7);
+
         if (cells[x][y].GetObject() != Cell::TELEPORT) {
             SetX(x);
             cells[x][y].SetActive(true);
         }
         if (cells[x][y].GetObject() != Cell::WIN)
             cells[x][y].SetObject(Cell::COMMON);
-        cells[x][y].UseEvent();//для полевых ивентов аргументом должна быть ссылка на поле!!!
+        cells[x][y].UseEvent(log_info);
 
     }
     else 
     {
         x = (x - 1 + height) % height;
-        std::cout << "Wall" << std::endl;
+        Message message8(ERROR, "player try to move on wall-cell", this->log_info);
+        Notify(message8);
+        //std::cout << "Wall" << std::endl;
         SetX(x);
         cells[x][y].SetActive(true);
     }
@@ -270,9 +299,7 @@ std::vector<std::vector<Cell>>* Field::GetField() {
 }
 
 void Field::updateEvents() {
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     EventCreator ev_creator(this, player);
-    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> height_dist(0, height-1);

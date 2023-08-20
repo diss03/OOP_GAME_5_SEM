@@ -4,6 +4,6 @@ class ChangeFieldEvent :public FieldEvent
 {
 public:
 	ChangeFieldEvent(Field*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 

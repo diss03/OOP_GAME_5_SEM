@@ -2,8 +2,15 @@
 #include "Cell.h"
 #include "Player.h"
 #include <vector>
+#include <string>
 
-class Field
+#include "InfoLog.h"
+#include "Subject.h"
+#include "ErrorObserver.h"
+#include "GameObserver.h"
+#include "StatusObserver.h"
+
+class Field : public Subject
 {
 private:
     int height;
@@ -12,10 +19,12 @@ private:
     int x;
     int y;
     Player* player;
+    InfoLog* log_info;
+    std::string log_text;
 
 public:
     Field();
-    Field(int, int, Player* player);
+    Field(int, int, Player*, InfoLog*);
     Field(const Field&);
     Field& operator=(const Field&);
     Field(Field&&);

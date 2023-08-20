@@ -4,7 +4,8 @@ HpEvent::HpEvent(Player* player) {
 	this->player = player;
 }
 
-void HpEvent::execute() {
+void HpEvent::execute(InfoLog* text) {
 	player->SetHealth(player->GetHealth() + 10);
-	std::cout << "Player was healed!" << std::endl;
+	Message message(GAME, "player picked up a heal point", text);
+	Notify(message);
 }

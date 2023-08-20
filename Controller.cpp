@@ -3,11 +3,20 @@
 #include "windows.h"
 #include <cstdio>
 
-Controller::Controller() {}
+//Controller::Controller() {}
 
-Controller::Controller(CommandReader* comread) : comread(comread) {
+Controller::Controller(CommandReader* comread, InfoLog* log_info) : comread(comread) {
     this->player = new Player();
-    this->field = new Field(comread->GetHeight(), comread->GetWidth(), player);
+    
+    new GameObserver(this);
+    new StatusObserver(this);
+    this->log_info = log_info;
+
+    this->field = new Field(comread->GetHeight(), comread->GetWidth(), player, log_info);
+    
+    new GameObserver(this->field);
+    new ErrorObserver(this->field);
+
     this->fieldw = FieldView();
 
     this->field = field; //---коммент из старой версии: используем коснтруктор с параметрами и конструктор копирования поля
@@ -103,6 +112,8 @@ void Controller::Move() {
     changeField.setScale(sf::Vector2f(0.45f, 0.45f));
     sprites.push_back(changeField);
 
+    Message message(STATUS, "Game started!", this->log_info);
+    Notify(message);
 
     fieldw.Print(field, player, &window, sprites);
     while (window.isOpen() and player->GetEnd() != true)
@@ -136,12 +147,21 @@ void Controller::Move() {
             field->MoveLeft();
             fieldw.Print(field, player, &window, sprites);
         }
+        //else if (event.type == sf::Event::KeyPressed) {
+        //    fieldw.Print(field, player, &window, sprites);
+        //}
         //проверка условия на проигрыш 
         if (player->GetHealth() <= 0) {
             std::cout << "U LOSE!" << std::endl;
+            Message message(GAME, "player losed", this->log_info);
+            Notify(message);
+
             player->SetEnd(true);
         }
     }
     std::cout << "game over!" << std::endl;
+    Message message1(STATUS, "GAME OVER", this->log_info);
+    Notify(message1);
+
     Sleep(5000);
 }

@@ -31,6 +31,24 @@
     <Filter Include="Source Files\Logging">
       <UniqueIdentifier>{4878f632-b2a2-4fb7-ac5b-e1100f3a0b7d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Logging\Output">
+      <UniqueIdentifier>{e90f2d3b-754b-40c7-8c85-0693cc6d587d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logging\Output">
+      <UniqueIdentifier>{47c96585-04d8-4594-88f7-3d2bac398c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logging\Observer">
+      <UniqueIdentifier>{40593215-c60e-4c4c-907e-e72c0f2f28b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logging\Observer">
+      <UniqueIdentifier>{354c3929-cb2c-4884-848b-3556ec00e2e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Assigments">
+      <UniqueIdentifier>{19def909-fe6b-4bdb-b0a9-27e32de329d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assigments">
+      <UniqueIdentifier>{7ef421dd-370d-4991-ab15-ed7335e6427d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -80,6 +98,39 @@
     </ClCompile>
     <ClCompile Include="EventCreator.cpp">
       <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLogger.cpp">
+      <Filter>Source Files\Logging\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLogger.cpp">
+      <Filter>Source Files\Logging\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoLog.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorObserver.cpp">
+      <Filter>Source Files\Logging\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObserver.cpp">
+      <Filter>Source Files\Logging\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusObserver.cpp">
+      <Filter>Source Files\Logging\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>Source Files\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Assigments.cpp">
+      <Filter>Source Files\Assigments</Filter>
+    </ClCompile>
+    <ClCompile Include="FileInput.cpp">
+      <Filter>Source Files\Assigments</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +184,48 @@
     </ClInclude>
     <ClInclude Include="EventCreator.h">
       <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Output.h">
+      <Filter>Header Files\Logging\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLogger.h">
+      <Filter>Header Files\Logging\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLogger.h">
+      <Filter>Header Files\Logging\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoLog.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Header Files\Logging\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorObserver.h">
+      <Filter>Header Files\Logging\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObserver.h">
+      <Filter>Header Files\Logging\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusObserver.h">
+      <Filter>Header Files\Logging\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Header Files\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Assigments.h">
+      <Filter>Header Files\Assigments</Filter>
+    </ClInclude>
+    <ClInclude Include="FileInput.h">
+      <Filter>Header Files\Assigments</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

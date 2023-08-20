@@ -5,6 +5,6 @@ class DamageEvent :public PlayerEvent
 {
 public:
 	DamageEvent(Player*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 

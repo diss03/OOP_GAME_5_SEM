@@ -35,7 +35,7 @@ public:
     void ChangeActive();
     void ChangeWall();
     //void ChangeReaction();
-    void UseEvent();
+    void UseEvent(InfoLog*);
     //~Cell();
     ~Cell() = default;
 

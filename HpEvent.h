@@ -5,6 +5,6 @@ class HpEvent :public PlayerEvent
 {
 public:
 	HpEvent(Player*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 

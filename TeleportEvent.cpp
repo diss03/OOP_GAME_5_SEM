@@ -8,7 +8,7 @@ TeleportEvent::TeleportEvent(Field* field) {
 }
 
 
-void TeleportEvent::execute() {
+void TeleportEvent::execute(InfoLog* text) {
 	std::vector<std::vector<Cell>>* cells = field->GetField();
 
 	int x = field->GetX();
@@ -30,7 +30,8 @@ void TeleportEvent::execute() {
 	(*cells)[i][j].SetActive(true);
 	if ((*cells)[i][j].GetObject() != Cell::WIN)
 		(*cells)[i][j].SetObject(Cell::COMMON);
-	(*cells)[i][j].UseEvent();
+	(*cells)[i][j].UseEvent(text);
 
-	std::cout << "Player has been teleported!" << std::endl;
+	Message message(GAME, "player has been teleported", text);
+	Notify(message);
 }

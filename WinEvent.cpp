@@ -6,9 +6,11 @@ WinEvent::WinEvent(Player* player) {
 }
 
 
-void WinEvent::execute() {
+void WinEvent::execute(InfoLog* text) {
 	if (player->GetBank() >= 3 and player->GetHealth() > 0) {
-		std::cout << "U WIN!!!" << std::endl;
 		player->SetEnd(true);
+
+		Message message(GAME, "the win event was completed", text);
+		Notify(message);
 	}
 }

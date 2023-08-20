@@ -5,6 +5,6 @@ class BankEvent :public PlayerEvent
 {
 public:
 	BankEvent(Player*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 

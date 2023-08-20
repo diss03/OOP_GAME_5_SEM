@@ -5,6 +5,6 @@ class ArmorEvent :public PlayerEvent
 {
 public:
 	ArmorEvent(Player*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 

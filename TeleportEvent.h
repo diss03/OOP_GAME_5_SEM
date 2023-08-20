@@ -5,6 +5,6 @@ class TeleportEvent :public FieldEvent
 {
 public:
 	TeleportEvent(Field*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 

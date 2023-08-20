@@ -5,7 +5,7 @@
 class FieldEvent :public Event
 {
 public:
-	void execute() = 0;
+	void execute(InfoLog*) = 0;
 protected:
 	Field* field;
 };

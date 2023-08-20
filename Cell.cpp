@@ -51,6 +51,9 @@ void Cell::SetWall(bool w) {
 void Cell::SetPlayersEvents(Event* event) {
     //if (this->event == nullptr)
         this->event = event;
+        if (this->event) {
+            new GameObserver(this->event);
+        }
 }
 
 void Cell::SetObject(OBJECTS obj) {
@@ -73,9 +76,9 @@ void Cell::ChangeWall() {
 //    reaction ? reaction = false : reaction = true;
 //}
 
-void Cell::UseEvent() {
+void Cell::UseEvent(InfoLog* log_info) {
     if (event != nullptr) {
-        event->execute();
+        event->execute(log_info);
         if (object != Cell::WIN)
             event = nullptr;
     }

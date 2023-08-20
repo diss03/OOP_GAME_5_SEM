@@ -5,7 +5,7 @@
 class PlayerEvent: public Event
 {
 public:
-	void execute() = 0;
+	void execute(InfoLog*) = 0;
 protected:
 	Player* player;
 };

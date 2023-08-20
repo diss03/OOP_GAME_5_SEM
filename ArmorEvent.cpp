@@ -5,10 +5,11 @@ ArmorEvent::ArmorEvent(Player* player) {
     this->player = player;
 }
 
-void ArmorEvent::execute()
+void ArmorEvent::execute(InfoLog* text)
 {
     player->SetArmor(player->GetArmor() + 10);
-    std::cout << "picked up armor" << std::endl;
+    Message message(GAME, "picked up an armor point", text);
+    Notify(message);
 }
 
 

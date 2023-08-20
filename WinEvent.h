@@ -4,7 +4,7 @@ class WinEvent: public PlayerEvent
 {
 public:
 	WinEvent(Player*);
-	void execute() override;
+	void execute(InfoLog*) override;
 };
 
 

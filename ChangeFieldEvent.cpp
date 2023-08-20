@@ -6,7 +6,8 @@ ChangeFieldEvent::ChangeFieldEvent(Field* _field) {
     
 }
 
-void ChangeFieldEvent::execute() {
+void ChangeFieldEvent::execute(InfoLog* text) {
 	field->InitCells(field->GetHeight(), field->GetWidth());
-	std::cout << "Field has been changed!" << std::endl;
+	Message message(GAME, "fiel has been changed", text);
+	Notify(message);
 }
