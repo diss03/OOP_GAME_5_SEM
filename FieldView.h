@@ -1,6 +1,7 @@
 #pragma once
 #include "Player.h"
 #include "Field.h"
+#include "Enums.h"
 #include <SFML/Graphics.hpp>
 
 class FieldView

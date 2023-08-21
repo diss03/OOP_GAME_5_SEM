@@ -135,6 +135,7 @@
     <ClCompile Include="BankEvent.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="ChangeFieldEvent.cpp" />
+    <ClCompile Include="CmdCommandReader.cpp" />
     <ClCompile Include="CmdLogger.cpp" />
     <ClCompile Include="CommandReader.cpp" />
     <ClCompile Include="Controller.cpp" />
@@ -150,11 +151,13 @@
     <ClCompile Include="InfoLog.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mediator.cpp" />
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="StatusObserver.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="TeleportEvent.cpp" />
+    <ClCompile Include="UiCommandReader.cpp" />
     <ClCompile Include="WinEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +166,7 @@
     <ClInclude Include="BankEvent.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="ChangeFieldEvent.h" />
+    <ClInclude Include="CmdCommandReader.h" />
     <ClInclude Include="CmdLogger.h" />
     <ClInclude Include="CommandReader.h" />
     <ClInclude Include="Controller.h" />
@@ -180,6 +184,7 @@
     <ClInclude Include="HpEvent.h" />
     <ClInclude Include="InfoLog.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="Mediator.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="Output.h" />
@@ -188,6 +193,7 @@
     <ClInclude Include="StatusObserver.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="TeleportEvent.h" />
+    <ClInclude Include="UiCommandReader.h" />
     <ClInclude Include="WinEvent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

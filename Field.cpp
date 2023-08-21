@@ -166,7 +166,7 @@ void Field::MoveLeft() {
     y = (y - 1 + width) % width;
     if (cells[x][y].GetObject() != Cell::WALL) {
 
-        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        this->log_text = "player moved left on " + std::to_string(x) + ":" + std::to_string(y) + " cell";
         Message message1(GAME, this->log_text, this->log_info);
         Notify(message1);
 
@@ -195,7 +195,7 @@ void Field::MoveRight() {
     y = (y + 1) % width;         //êîîðäèíàòû îòñ÷èòûâàþòñÿ ñ 0 (òîãäà ïî ìîäóëþ õîðîøî áåðåòñÿ)
     if (cells[x][y].GetObject() != Cell::WALL)
     { 
-        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        this->log_text = "player moved right on " + std::to_string(x) + ":" + std::to_string(y) + " cell";
         Message message3(GAME, this->log_text, this->log_info);
         Notify(message3);
 
@@ -224,7 +224,7 @@ void Field::MoveUp() {
     x = (x - 1 + height) % height;
     if (cells[x][y].GetObject() != Cell::WALL)
     {
-        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        this->log_text = "player moved up on " + std::to_string(x) + ":" + std::to_string(y) + " cell";
         Message message5(GAME, this->log_text, this->log_info);
         Notify(message5);
 
@@ -254,7 +254,7 @@ void Field::MoveDown() {
     if (cells[x][y].GetObject()!=Cell::WALL) 
     { //ïðîâåðêà íà âîçìîæíîñòü õîäà
 
-        this->log_text = "player moved on " + std::to_string(x) + ";" + std::to_string(y) + " cell";
+        this->log_text = "player moved down on " + std::to_string(x) + ":" + std::to_string(y) + " cell";
         Message message7(GAME, this->log_text, this->log_info);
         Notify(message7);
 

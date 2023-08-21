@@ -43,10 +43,10 @@
     <Filter Include="Header Files\Logging\Observer">
       <UniqueIdentifier>{354c3929-cb2c-4884-848b-3556ec00e2e2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Assigments">
+    <Filter Include="Header Files\Control">
       <UniqueIdentifier>{19def909-fe6b-4bdb-b0a9-27e32de329d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Assigments">
+    <Filter Include="Source Files\Control">
       <UniqueIdentifier>{7ef421dd-370d-4991-ab15-ed7335e6427d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -76,12 +76,6 @@
       <Filter>Source Files\Events</Filter>
     </ClCompile>
     <ClCompile Include="Cell.cpp">
-      <Filter>Source Files\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="CommandReader.cpp">
-      <Filter>Source Files\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Controller.cpp">
       <Filter>Source Files\Base</Filter>
     </ClCompile>
     <ClCompile Include="Field.cpp">
@@ -127,10 +121,25 @@
       <Filter>Source Files\Logging</Filter>
     </ClCompile>
     <ClCompile Include="Assigments.cpp">
-      <Filter>Source Files\Assigments</Filter>
+      <Filter>Source Files\Control</Filter>
     </ClCompile>
     <ClCompile Include="FileInput.cpp">
-      <Filter>Source Files\Assigments</Filter>
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandReader.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdCommandReader.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="UiCommandReader.cpp">
+      <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Mediator.cpp">
+      <Filter>Source Files\Control</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -165,12 +174,6 @@
       <Filter>Header Files\Events</Filter>
     </ClInclude>
     <ClInclude Include="Cell.h">
-      <Filter>Header Files\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="CommandReader.h">
-      <Filter>Header Files\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Controller.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
     <ClInclude Include="Field.h">
@@ -222,10 +225,25 @@
       <Filter>Header Files\Base</Filter>
     </ClInclude>
     <ClInclude Include="Assigments.h">
-      <Filter>Header Files\Assigments</Filter>
+      <Filter>Header Files\Control</Filter>
     </ClInclude>
     <ClInclude Include="FileInput.h">
-      <Filter>Header Files\Assigments</Filter>
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandReader.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdCommandReader.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="UiCommandReader.h">
+      <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator.h">
+      <Filter>Header Files\Control</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -20,13 +20,15 @@ Controller::Controller(CommandReader* comread, InfoLog* log_info) : comread(comr
     this->fieldw = FieldView();
 
     this->field = field; //---коммент из старой версии: используем коснтруктор с параметрами и конструктор копирования поля
+
+    this->step = NOTHING;
 }
 
 // ńîçäŕĺě ýęçĺěďë˙đ ęëŕńńŕ ďîëĺ č óćĺ ń íčě đŕáîňŕĺě, čěĺ˙ ďđč ńĺáĺ ýęçĺěďë˙đ ęëŕńńŕ ęîěěŕíä-đčäĺđ čç ěýéíŕ//
 
 void Controller::Move() {
     sf::RenderWindow window(sf::VideoMode(800, 800), "OOP_GAME", sf::Style::Default);
-    window.setFramerateLimit(10);
+    window.setFramerateLimit(5);
 
 
     std::vector<sf::Sprite> sprites;
@@ -118,48 +120,66 @@ void Controller::Move() {
     fieldw.Print(field, player, &window, sprites);
     while (window.isOpen() and player->GetEnd() != true)
     {
-        if (player->GetEnd() == true) {
-            window.close();
-        }
+        comread->SetStep(&window);
+        this->step = comread->GetStep();
 
-        comread->InputStep(&window);
+        if (player->GetEnd() == true)
+            window.close();
+            
+
+        if (this->step == EXIT)
+            window.close();
+
+        
         //Move(comread.GetStep());
-        sf::Event event = comread->GetStep();
-        if (event.type == sf::Event::Closed) {
-            window.close();
-        }
-        else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-            window.close();
-        }
-        else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::W) {
+        //sf::Event event = comread->GetStep();
+        
+        switch (step) {
+        case ASSIGMENTS::UP:
+            std::cout << "ASSIGMENTS::UP" << std::endl;
             field->MoveUp();
             fieldw.Print(field, player, &window, sprites);
-        }
-        else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::S) {
+            this->step = NOTHING;
+            break;
+
+        case ASSIGMENTS::DOWN:
+            std::cout << "ASSIGMENTS::DOWN" << std::endl;
             field->MoveDown();
             fieldw.Print(field, player, &window, sprites);
-        }
-        else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::D) {
+            this->step = NOTHING;
+            break;
+        
+        case ASSIGMENTS::RIGHT:
+            std::cout << "ASSIGMENTS::RIGHT" << std::endl;
             field->MoveRight();
             fieldw.Print(field, player, &window, sprites);
-        }
-        else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::A) {
+            this->step = NOTHING;
+            break;
+
+        case ASSIGMENTS::LEFT:
+            std::cout << "ASSIGMENTS::LEFT" << std::endl;
             field->MoveLeft();
             fieldw.Print(field, player, &window, sprites);
-        }
-        //else if (event.type == sf::Event::KeyPressed) {
-        //    fieldw.Print(field, player, &window, sprites);
-        //}
-        //проверка условия на проигрыш 
-        if (player->GetHealth() <= 0) {
-            std::cout << "U LOSE!" << std::endl;
-            Message message(GAME, "player losed", this->log_info);
-            Notify(message);
+            this->step = NOTHING;
+            break;
 
+        case ASSIGMENTS::NOTHING:
+            //std::cout << "ASSIGMENTS::NOTHING" << std::endl;
+            //fieldw.Print(field, player, &window, sprites);
+            this->step = NOTHING;
+            break;
+        
+        }
+
+        ////проверка условия на проигрыш 
+        if (player->GetHealth() <= 0) {
+            //std::cout << "U LOSE!" << std::endl;
+            Message message2(GAME, "player losed", this->log_info);
+            Notify(message2);
             player->SetEnd(true);
         }
     }
-    std::cout << "game over!" << std::endl;
+    //std::cout << "game over!" << std::endl;
     Message message1(STATUS, "GAME OVER", this->log_info);
     Notify(message1);
 

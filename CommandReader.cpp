@@ -2,8 +2,11 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
+
 CommandReader::CommandReader() {
     new ErrorObserver(this);
+    this->input_commands = new FileInput("assigments.txt");
+    input_commands->SetCommands();
 }
 
 void CommandReader::SetSize() {
@@ -47,10 +50,10 @@ void CommandReader::InputWidth() {
     }
 }
 
-void CommandReader::InputStep(sf::RenderWindow* window) {
-    //std::cout << "Tap on move buttons" << std::endl;
-    window->pollEvent(step);
-}
+//void CommandReader::InputStep(sf::RenderWindow* window) {
+//    //std::cout << "Tap on move buttons" << std::endl;
+//    window->pollEvent(step);
+//}
 
 int CommandReader::GetHeight() {
     return height;
@@ -60,7 +63,11 @@ int CommandReader::GetWidth() {
     return width;
 }
 
-sf::Event CommandReader::GetStep() {
+//sf::Event CommandReader::GetStep() {
+//    return  step;
+//}
+
+ASSIGMENTS CommandReader::GetStep() {
     return  step;
 }
 

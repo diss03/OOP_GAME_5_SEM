@@ -19,6 +19,7 @@ private:
 	Player* player;
 	CommandReader* comread;
 	InfoLog* log_info;
+	ASSIGMENTS step;
 	
 
 public:

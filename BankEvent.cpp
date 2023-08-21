@@ -10,5 +10,4 @@ void BankEvent::execute(InfoLog* text) {
 	player->SetBank(player->GetBank() + 1);
 	Message message(GAME, "picked up a coin", text);
 	Notify(message);
-	std::cout << "CATCH IT!!1" << std::endl;
 }

@@ -16,7 +16,7 @@ enum ASSIGMENTS
     RIGHT,
     UP,
     DOWN,
-    NOWHERE,
+    NOTHING,
     SAVE,
     LOAD,
     EXIT

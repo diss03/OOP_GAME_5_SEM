@@ -6,18 +6,24 @@
 #include "GameObserver.h"
 #include "StatusObserver.h"
 
+#include "Assigments.h"
+#include "FileInput.h"
+
 
 class CommandReader : public Subject
 {
-private:
+protected:
 	int height;
 	int width;
 	
-	sf::Event step;
+	//sf::Event step;
+	ASSIGMENTS step;
 
 	InfoLog* info;
 	std::vector <OUTPUT> outputs;
 	std::vector <LEVEL> levels;
+
+	FileInput* input_commands;
 
 public:
 	CommandReader();
@@ -25,7 +31,8 @@ public:
 	void SetSize();
 	void InputHeight();
 	void InputWidth();
-	void InputStep(sf::RenderWindow*);
+	//void InputStep(sf::RenderWindow*);
+	virtual void SetStep(sf::RenderWindow*) = 0;
 
 	void SetOutput();
 	void SetLevels();
@@ -33,9 +40,12 @@ public:
 	int GetHeight();
 	int GetWidth();
 
-	sf::Event GetStep();
+	ASSIGMENTS GetStep();
+	//sf::Event GetStep();
 
 	std::vector <OUTPUT> GetOutputs();
 	std::vector <LEVEL> GetLevels();
+
+	
 };
 
