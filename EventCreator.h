@@ -25,5 +25,7 @@ public:
     Event* CreateDamageEvent();
     Event* CreateTeleportEvent();
     Event* CreateWinEvent();
+    Field* Get_Field();
+    Player* Get_Player();
 };
 

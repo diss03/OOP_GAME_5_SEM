@@ -21,3 +21,8 @@ enum ASSIGMENTS
     LOAD,
     EXIT
 };
+
+enum DIFFICULTY {
+    EASY = 1,
+    HARD = 2
+};

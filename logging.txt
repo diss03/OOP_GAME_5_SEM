@@ -2807,3 +2807,287 @@ GAME: player moved down on 9:7 cell
 GAME: player moved left on 9:6 cell
 GAME: the win event was completed
 STATUS: GAME OVER
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: player moved right on 1:2 cell
+GAME: player was kicked
+GAME: player moved right on 1:3 cell
+GAME: player moved down on 2:3 cell
+GAME: player moved right on 2:4 cell
+GAME: player was kicked
+GAME: player moved right on 2:5 cell
+GAME: player moved right on 2:6 cell
+GAME: player moved right on 2:7 cell
+GAME: player moved right on 2:8 cell
+GAME: picked up an armor point
+GAME: player moved down on 3:8 cell
+GAME: player moved down on 4:8 cell
+GAME: player moved left on 4:7 cell
+GAME: player moved left on 4:6 cell
+GAME: player moved up on 3:6 cell
+GAME: picked up an armor point
+GAME: player moved up on 2:6 cell
+GAME: player moved left on 2:5 cell
+GAME: player moved up on 1:5 cell
+GAME: picked up an armor point
+GAME: player moved down on 2:5 cell
+GAME: player moved down on 3:5 cell
+GAME: player picked up a heal point
+GAME: player moved up on 2:5 cell
+GAME: player moved left on 2:4 cell
+GAME: player moved left on 2:3 cell
+GAME: player moved left on 2:2 cell
+GAME: player moved up on 1:2 cell
+GAME: player moved left on 1:1 cell
+GAME: player moved left on 1:0 cell
+GAME: player moved down on 2:0 cell
+GAME: player moved down on 3:0 cell
+GAME: player moved right on 3:1 cell
+GAME: picked up a coin
+GAME: player moved down on 4:1 cell
+GAME: player moved left on 4:0 cell
+GAME: player moved down on 5:0 cell
+GAME: player moved down on 6:0 cell
+GAME: player picked up a heal point
+GAME: player moved right on 6:1 cell
+GAME: player was kicked
+GAME: player moved right on 6:2 cell
+GAME: player moved right on 6:3 cell
+GAME: player moved down on 7:3 cell
+GAME: picked up an armor point
+GAME: player moved down on 8:3 cell
+GAME: player moved down on 9:3 cell
+GAME: player moved right on 9:4 cell
+GAME: picked up a coin
+GAME: player moved left on 9:3 cell
+GAME: player moved up on 8:3 cell
+GAME: player moved up on 7:3 cell
+GAME: player moved up on 6:3 cell
+GAME: player moved right on 6:4 cell
+GAME: player moved up on 5:4 cell
+GAME: player moved right on 5:5 cell
+GAME: picked up an armor point
+GAME: player moved right on 5:6 cell
+GAME: player picked up a heal point
+GAME: player moved up on 4:6 cell
+GAME: player moved right on 4:7 cell
+GAME: player moved right on 4:8 cell
+GAME: player moved down on 5:8 cell
+GAME: player picked up a heal point
+GAME: player moved down on 6:8 cell
+GAME: fiel has been changed
+GAME: player moved down on 1:0 cell
+GAME: player was kicked
+GAME: player moved down on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: picked up a coin
+GAME: player moved right on 2:2 cell
+GAME: player moved right on 2:3 cell
+GAME: player moved right on 2:4 cell
+GAME: picked up a coin
+GAME: player moved right on 2:5 cell
+GAME: picked up a coin
+GAME: player moved right on 2:6 cell
+GAME: player moved down on 3:6 cell
+GAME: player moved right on 3:7 cell
+GAME: player moved down on 4:7 cell
+GAME: the win event was completed
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: player moved down on 1:0 cell
+GAME: player moved down on 2:0 cell
+GAME: player moved down on 3:0 cell
+GAME: picked up a coin
+GAME: player moved down on 4:0 cell
+GAME: player moved right on 4:1 cell
+GAME: player picked up a heal point
+GAME: player moved right on 4:2 cell
+GAME: player moved right on 4:3 cell
+GAME: player has been teleported
+GAME: player moved right on 6:7 cell
+GAME: player was kicked
+GAME: player moved left on 6:6 cell
+GAME: player moved left on 6:5 cell
+GAME: picked up an armor point
+GAME: player moved up on 5:5 cell
+GAME: player was kicked
+GAME: player moved left on 5:4 cell
+GAME: player was kicked
+GAME: player moved down on 6:4 cell
+GAME: player was kicked
+GAME: player moved right on 6:5 cell
+GAME: player moved right on 6:6 cell
+GAME: player moved down on 7:6 cell
+GAME: player moved right on 7:7 cell
+GAME: player moved right on 7:8 cell
+GAME: player was kicked
+GAME: player losed
+STATUS: GAME OVER
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved left on 1:1 cell
+GAME: player was kicked
+GAME: player moved down on 2:1 cell
+GAME: player moved down on 3:1 cell
+GAME: player moved down on 4:1 cell
+GAME: picked up a coin
+GAME: player moved right on 4:2 cell
+GAME: picked up a coin
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: fiel has been changed
+GAME: the win event was completed
+GAME: player has been teleported
+STATUS: GAME OVER
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: fiel has been changed
+STATUS: Game started!
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player has been teleported
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player has been teleported
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: fiel has been changed
+STATUS: Game started!
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player has been teleported
+GAME: fiel has been changed
+STATUS: Game started!
+STATUS: GAME OVER
+STATUS: Game started!
+STATUS: Game started!
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: picked up a coin
+GAME: fiel has been changed
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: fiel has been changed
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player has been teleported
+GAME: picked up an armor point
+GAME: the win event was completed
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: the win event was completed
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player has been teleported
+GAME: fiel has been changed
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: the win event was completed
+STATUS: GAME OVER

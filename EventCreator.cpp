@@ -31,3 +31,9 @@ Event* EventCreator::CreateTeleportEvent() {
 Event* EventCreator::CreateWinEvent() {
 	return new WinEvent(player);
 }
+Field* EventCreator::Get_Field() {
+	return this->field;
+}
+Player* EventCreator::Get_Player() {
+	return this->player;
+}

@@ -22,9 +22,6 @@
     <Filter Include="Header Files\Base">
       <UniqueIdentifier>{4b6b27b3-b9a8-4a9c-bf91-9725c50ff595}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Base">
-      <UniqueIdentifier>{e59fc568-70cb-48b4-b4b2-78f1481061c5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Logging">
       <UniqueIdentifier>{037172ef-f76f-44e8-b243-724c61aafaee}</UniqueIdentifier>
     </Filter>
@@ -48,6 +45,18 @@
     </Filter>
     <Filter Include="Source Files\Control">
       <UniqueIdentifier>{7ef421dd-370d-4991-ab15-ed7335e6427d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generation">
+      <UniqueIdentifier>{8638bf05-c814-48d1-8faa-ce33ee3de07d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Generation">
+      <UniqueIdentifier>{cbe11400-d796-4084-bcca-d0846f51caf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generation\Rules">
+      <UniqueIdentifier>{d0dfd798-9758-494a-8dfa-6652af1ca7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{e59fc568-70cb-48b4-b4b2-78f1481061c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +149,12 @@
     </ClCompile>
     <ClCompile Include="Mediator.cpp">
       <Filter>Source Files\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldGenerator.cpp">
+      <Filter>Source Files\Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="Generator.cpp">
+      <Filter>Source Files\Generation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +259,33 @@
     </ClInclude>
     <ClInclude Include="Mediator.h">
       <Filter>Header Files\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeField.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Damage.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Hp.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Teleport.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="FiledBase.h">
+      <Filter>Header Files\Generation\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldGenerator.h">
+      <Filter>Header Files\Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="Generator.h">
+      <Filter>Header Files\Generation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

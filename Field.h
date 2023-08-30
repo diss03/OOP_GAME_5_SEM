@@ -38,7 +38,7 @@ public:
     void MoveLeft();
     void MoveRight();
 
-    void InitCells(int, int);
+    void InitCells();
 
     int GetHeight();
     int GetWidth();

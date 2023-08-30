@@ -3,28 +3,56 @@
 #include "windows.h"
 #include <cstdio>
 
+//#include "Generator.h"
+
 //Controller::Controller() {}
 
-Controller::Controller(CommandReader* comread, InfoLog* log_info) : comread(comread) {
+Controller::Controller(CommandReader* comread, InfoLog* log_info, DIFFICULTY dif){
+    this->comread = comread;
     this->player = new Player();
     
     new GameObserver(this);
     new StatusObserver(this);
     this->log_info = log_info;
 
-    this->field = new Field(comread->GetHeight(), comread->GetWidth(), player, log_info);
+    //this->field = new Field(comread->GetHeight(), comread->GetWidth(), player, log_info); //убрать в 5 лб
     
-    new GameObserver(this->field);
-    new ErrorObserver(this->field);
+    new GameObserver(this);
+    new ErrorObserver(this);
 
     this->fieldw = FieldView();
 
-    this->field = field; //---коммент из старой версии: используем коснтруктор с параметрами и конструктор копирования поля
+    /*this->field = field; *///---коммент из старой версии: используем коснтруктор с параметрами и конструктор копирования поля
 
     this->step = NOTHING;
+    this->difficulty = dif;
 }
 
 // ńîçäŕĺě ýęçĺěďë˙đ ęëŕńńŕ ďîëĺ č óćĺ ń íčě đŕáîňŕĺě, čěĺ˙ ďđč ńĺáĺ ýęçĺěďë˙đ ęëŕńńŕ ęîěěŕíä-đčäĺđ čç ěýéíŕ//
+ 
+void Controller::FieldGanerate() {
+    //Generator* generator;
+    if (difficulty == EASY) {
+        //FieldGenerator* generator = new ;
+        FieldGenerator<FiledBase<EASY>, Armor<EASY>, Bank<EASY>, ChangeField<EASY>, Damage<EASY>, Hp<EASY>, Teleport<EASY>> generator;
+        this->field = generator.generate(this->comread->GetHeight(), this->comread->GetWidth(), this->player, this->log_info);
+    }
+    else if (difficulty == HARD){
+        //FieldGenerator* generator = new FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>>;
+        FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>> generator;
+        this->field = generator.generate(this->comread->GetHeight(),this->comread->GetWidth(), this->player, this->log_info);
+    }
+
+    //Generator* generator;
+
+    //if (difficulty == EASY) {
+    //    generator = new FieldGenerator<FiledBase<EASY>, Armor<EASY>, Bank<EASY>, ChangeField<EASY>, Damage<EASY>, Hp<EASY>, Teleport<EASY>>;
+    //}
+    //else {
+    //    generator = new FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>>;
+    //}
+    //this->field = generator->generate(field->GetHeight(), field->GetWidth(), this->player, this->log_info);
+}
 
 void Controller::Move() {
     sf::RenderWindow window(sf::VideoMode(800, 800), "OOP_GAME", sf::Style::Default);
@@ -117,13 +145,13 @@ void Controller::Move() {
     Message message(STATUS, "Game started!", this->log_info);
     Notify(message);
 
-    fieldw.Print(field, player, &window, sprites);
-    while (window.isOpen() and player->GetEnd() != true)
+    fieldw.Print(this->field, this->player, &window, sprites);
+    while (window.isOpen() and this->player->GetEnd() != true)
     {
         comread->SetStep(&window);
         this->step = comread->GetStep();
 
-        if (player->GetEnd() == true)
+        if (this->player->GetEnd() == true)
             window.close();
             
 

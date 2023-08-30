@@ -7,7 +7,8 @@ ChangeFieldEvent::ChangeFieldEvent(Field* _field) {
 }
 
 void ChangeFieldEvent::execute(InfoLog* text) {
-	field->InitCells(field->GetHeight(), field->GetWidth());
+	field->InitCells();
+	field->updateEvents(); //надо связать с генератором поля
 	Message message(GAME, "fiel has been changed", text);
 	Notify(message);
 }

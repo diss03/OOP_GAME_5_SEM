@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +105,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -143,10 +146,12 @@
     <ClCompile Include="ErrorObserver.cpp" />
     <ClCompile Include="EventCreator.cpp" />
     <ClCompile Include="Field.cpp" />
+    <ClCompile Include="FieldGenerator.cpp" />
     <ClCompile Include="FieldView.cpp" />
     <ClCompile Include="FileInput.cpp" />
     <ClCompile Include="FileLogger.cpp" />
     <ClCompile Include="GameObserver.cpp" />
+    <ClCompile Include="Generator.cpp" />
     <ClCompile Include="HpEvent.cpp" />
     <ClCompile Include="InfoLog.cpp" />
     <ClCompile Include="Logger.cpp" />
@@ -161,15 +166,19 @@
     <ClCompile Include="WinEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Armor.h" />
     <ClInclude Include="ArmorEvent.h" />
     <ClInclude Include="Assigments.h" />
+    <ClInclude Include="Bank.h" />
     <ClInclude Include="BankEvent.h" />
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="ChangeField.h" />
     <ClInclude Include="ChangeFieldEvent.h" />
     <ClInclude Include="CmdCommandReader.h" />
     <ClInclude Include="CmdLogger.h" />
     <ClInclude Include="CommandReader.h" />
     <ClInclude Include="Controller.h" />
+    <ClInclude Include="Damage.h" />
     <ClInclude Include="DamageEvent.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="ErrorObserver.h" />
@@ -177,10 +186,14 @@
     <ClInclude Include="EventCreator.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="FieldEvent.h" />
+    <ClInclude Include="FieldGenerator.h" />
     <ClInclude Include="FieldView.h" />
+    <ClInclude Include="FiledBase.h" />
     <ClInclude Include="FileInput.h" />
     <ClInclude Include="FileLogger.h" />
     <ClInclude Include="GameObserver.h" />
+    <ClInclude Include="Generator.h" />
+    <ClInclude Include="Hp.h" />
     <ClInclude Include="HpEvent.h" />
     <ClInclude Include="InfoLog.h" />
     <ClInclude Include="Logger.h" />
@@ -192,6 +205,7 @@
     <ClInclude Include="PlayerEvent.h" />
     <ClInclude Include="StatusObserver.h" />
     <ClInclude Include="Subject.h" />
+    <ClInclude Include="Teleport.h" />
     <ClInclude Include="TeleportEvent.h" />
     <ClInclude Include="UiCommandReader.h" />
     <ClInclude Include="WinEvent.h" />

@@ -25,6 +25,8 @@ protected:
 
 	FileInput* input_commands;
 
+	DIFFICULTY difficulty;
+
 public:
 	CommandReader();
 
@@ -46,6 +48,8 @@ public:
 	std::vector <OUTPUT> GetOutputs();
 	std::vector <LEVEL> GetLevels();
 
+	void SetDifficulty();
+	DIFFICULTY GetDifficulty();
 	
 };
 

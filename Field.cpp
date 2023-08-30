@@ -17,7 +17,7 @@ void Field::SetY(int a) {
     y = a;
 }
 
-void Field::InitCells(int height, int width) {
+void Field::InitCells() {
     //первый варик
     //cells.resize(height); // pointers on lines
     //for (int i = 0; i < height; i++) {
@@ -49,7 +49,7 @@ void Field::InitCells(int height, int width) {
     SetY(0);
     cells[this->x][this->y].SetActive(true);
     cells[this->x][this->y].SetObject(Cell::COMMON);
-    updateEvents();
+    //updateEvents();
 }
 
 //expliced let to avoid implicit conversion
@@ -62,7 +62,7 @@ Field::~Field() {
 Field::Field() {
     this->height = 8;
     this->width = 8;
-    InitCells(height, width);
+    InitCells();
 }
 
 Field::Field(int height, int width, Player* player, InfoLog* info) {
@@ -70,7 +70,7 @@ Field::Field(int height, int width, Player* player, InfoLog* info) {
     this->width = width;
     this->player = player;
     this->log_info = info;
-    InitCells(height, width);
+    InitCells();
 
 
 

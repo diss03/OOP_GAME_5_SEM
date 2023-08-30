@@ -4,6 +4,12 @@
 
 
 CommandReader::CommandReader() {
+    this->width = 10;
+    this->step = NOTHING;
+    this->info = nullptr;
+    this->height = 10;
+    this->difficulty = EASY;
+
     new ErrorObserver(this);
     this->input_commands = new FileInput("assigments.txt");
     input_commands->SetCommands();
@@ -23,6 +29,23 @@ void CommandReader::SetSize() {
     InputHeight();
     InputWidth();
 }
+
+//void CommandReader::SetDifficulty() {
+//    std::cout << "Choose game difficalty?\n";
+//    std::cout << "Easy - 1\n";
+//    std::cout << "Hard - 2\n";
+//    char res;
+//    std::cin >> res;
+//    if (res == 1) {
+//        this->difficulty = EASY;
+//        return;
+//    }
+//    else if (res == 2) {
+//        this->difficulty = HARD;
+//        return;
+//    }
+//    else this->difficulty = EASY;
+//}
 
 void CommandReader::InputHeight() {
     std::cout << "Input field's height: ";
@@ -133,4 +156,27 @@ std::vector <OUTPUT> CommandReader::GetOutputs() {
 
 std::vector <LEVEL> CommandReader::GetLevels() {
     return this->levels;
+}
+
+void CommandReader::SetDifficulty() {
+    char res;
+    std::cout << "Set difficulty: \n";
+    std::cout << "1: easy\n";
+    std::cout << "2: hard\n";
+    std::cin >> res;
+    switch (res) {
+    case '1':
+        this->difficulty = EASY;
+        break;
+    case '2':
+        this->difficulty = HARD;
+        break;
+    default:
+        this->difficulty = EASY;
+        break;
+    }
+}
+
+DIFFICULTY CommandReader::GetDifficulty() {
+    return this->difficulty;
 }
