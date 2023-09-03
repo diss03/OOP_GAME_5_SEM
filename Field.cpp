@@ -70,6 +70,10 @@ Field::Field(int height, int width, Player* player, InfoLog* info) {
     this->width = width;
     this->player = player;
     this->log_info = info;
+
+    new GameObserver(this);
+    new ErrorObserver(this);
+
     InitCells();
 
 
@@ -148,7 +152,8 @@ Field::Field(Field&& other)
     width(other.width),
     x(other.x),
     y(other.y),
-    player(other.player)
+    player(other.player),
+    log_info(other.log_info)
 {
     x = y = width = height = 0;
     for (int i = 0; i < height; i++)

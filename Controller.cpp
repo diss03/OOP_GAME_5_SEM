@@ -20,7 +20,7 @@ Controller::Controller(CommandReader* comread, InfoLog* log_info, DIFFICULTY dif
 
     //this->field = new Field(comread->GetHeight(), comread->GetWidth(), player, log_info); //убрать в 5 лб
     
-    new GameObserver(this);
+    /*new GameObserver(this);*/
     new ErrorObserver(this);
 
     this->fieldw = FieldView();
@@ -165,6 +165,7 @@ void Controller::Move() {
         
         switch (step) {
             case ASSIGMENTS::UP: {
+                system("cls");
                 //std::cout << "ASSIGMENTS::UP" << std::endl;
                 field->MoveUp();
                 fieldw.Print(field, player, &window, sprites);
@@ -173,6 +174,7 @@ void Controller::Move() {
             }
 
             case ASSIGMENTS::DOWN: {
+                system("cls");
                 //std::cout << "ASSIGMENTS::DOWN" << std::endl;
                 field->MoveDown();
                 fieldw.Print(field, player, &window, sprites);
@@ -181,6 +183,7 @@ void Controller::Move() {
             }
 
             case ASSIGMENTS::RIGHT: {
+                system("cls");
                 //std::cout << "ASSIGMENTS::RIGHT" << std::endl;
                 field->MoveRight();
                 fieldw.Print(field, player, &window, sprites);
@@ -189,6 +192,7 @@ void Controller::Move() {
             }
 
             case ASSIGMENTS::LEFT: {
+                system("cls");
                 //std::cout << "ASSIGMENTS::LEFT" << std::endl;
                 field->MoveLeft();
                 fieldw.Print(field, player, &window, sprites);
@@ -198,6 +202,7 @@ void Controller::Move() {
 
             case ASSIGMENTS::SAVE: {
                 try {
+                    system("cls");
                     this->save_load_player->savePlayer(player);
                     this->save_load_field->saveField(field);
 
@@ -221,6 +226,7 @@ void Controller::Move() {
             }
 
             case ASSIGMENTS::LOAD: {
+                system("cls");
                 Player* copy_player = this->player;
                 Field* copy_field = this->field;
                 try {

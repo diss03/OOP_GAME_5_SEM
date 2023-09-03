@@ -3704,3 +3704,54 @@ GAME: picked up a coin
 STATUS: Game started!
 GAME: player picked up a heal point
 GAME: picked up an armor point
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved down on 4:2 cell
+GAME: player moved down on 5:2 cell
+GAME: player moved left on 5:1 cell
+GAME: picked up a coin
+GAME: player moved up on 4:1 cell
+GAME: player moved up on 3:1 cell
+GAME: player was kicked
+GAME: player moved down on 4:1 cell
+GAME: player moved right on 4:2 cell
+GAME: player moved left on 4:1 cell
