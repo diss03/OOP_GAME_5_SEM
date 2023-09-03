@@ -19,17 +19,18 @@ protected:
             {ASSIGMENTS::DOWN,  '\0'},
             {ASSIGMENTS::LEFT,  '\0'},
             {ASSIGMENTS::RIGHT, '\0'},
+            {ASSIGMENTS::EXIT,  '\0'},
             {ASSIGMENTS::SAVE, '\0'},
             {ASSIGMENTS::LOAD, '\0'},
-            {ASSIGMENTS::EXIT,  '\0'}
     };
+
     const std::map<ASSIGMENTS, char> default_moves = {
             {ASSIGMENTS::UP,    'w'},
             {ASSIGMENTS::DOWN,  's'},
             {ASSIGMENTS::LEFT,  'a'},
             {ASSIGMENTS::RIGHT, 'd'},
-            {ASSIGMENTS::SAVE, 'c'},
-            {ASSIGMENTS::LOAD, 'x'},
-            {ASSIGMENTS::EXIT,  'z'}
+            {ASSIGMENTS::EXIT,  'z'},
+            {ASSIGMENTS::SAVE, 'x'},
+            {ASSIGMENTS::LOAD, 'c'},
     };
 };

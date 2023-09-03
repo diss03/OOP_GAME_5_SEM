@@ -180,3 +180,15 @@ void CommandReader::SetDifficulty() {
 DIFFICULTY CommandReader::GetDifficulty() {
     return this->difficulty;
 }
+
+//bool CommandReader::GetContinue() {
+//    std::cout << "Do you want to load last save and continue?" << std::endl;
+//    std::cout << "Y - Yes\n";
+//    std::cout << "N - No\n";
+//    char res;
+//    std::cin >> res;
+//    if (res != 'Y' and res != 'y')
+//        return false;
+//    else 
+//        return true;
+//}

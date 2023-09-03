@@ -2,6 +2,7 @@
 #include "iostream"
 #include "windows.h"
 #include <cstdio>
+#include <stdio.h>
 
 //#include "Generator.h"
 
@@ -10,6 +11,8 @@
 Controller::Controller(CommandReader* comread, InfoLog* log_info, DIFFICULTY dif){
     this->comread = comread;
     this->player = new Player();
+    this->field = nullptr;
+
     
     new GameObserver(this);
     new StatusObserver(this);
@@ -26,6 +29,9 @@ Controller::Controller(CommandReader* comread, InfoLog* log_info, DIFFICULTY dif
 
     this->step = NOTHING;
     this->difficulty = dif;
+
+    this->save_load_field = new SaveLoadField;
+    this->save_load_player = new SaveLoadPlayer;
 }
 
 // ńîçäŕĺě ýęçĺěďë˙đ ęëŕńńŕ ďîëĺ č óćĺ ń íčě đŕáîňŕĺě, čěĺ˙ ďđč ńĺáĺ ýęçĺěďë˙đ ęëŕńńŕ ęîěěŕíä-đčäĺđ čç ěýéíŕ//
@@ -42,16 +48,6 @@ void Controller::FieldGanerate() {
         FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>> generator;
         this->field = generator.generate(this->comread->GetHeight(),this->comread->GetWidth(), this->player, this->log_info);
     }
-
-    //Generator* generator;
-
-    //if (difficulty == EASY) {
-    //    generator = new FieldGenerator<FiledBase<EASY>, Armor<EASY>, Bank<EASY>, ChangeField<EASY>, Damage<EASY>, Hp<EASY>, Teleport<EASY>>;
-    //}
-    //else {
-    //    generator = new FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>>;
-    //}
-    //this->field = generator->generate(field->GetHeight(), field->GetWidth(), this->player, this->log_info);
 }
 
 void Controller::Move() {
@@ -145,14 +141,19 @@ void Controller::Move() {
     Message message(STATUS, "Game started!", this->log_info);
     Notify(message);
 
+    new_game:
+
     fieldw.Print(this->field, this->player, &window, sprites);
     while (window.isOpen() and this->player->GetEnd() != true)
     {
         comread->SetStep(&window);
         this->step = comread->GetStep();
 
-        if (this->player->GetEnd() == true)
+        if (this->player->GetEnd() == true) {
+            Message message1(STATUS, "GAME OVER", this->log_info);
+            Notify(message1);
             window.close();
+        }
             
 
         if (this->step == EXIT)
@@ -163,40 +164,107 @@ void Controller::Move() {
         //sf::Event event = comread->GetStep();
         
         switch (step) {
-        case ASSIGMENTS::UP:
-            std::cout << "ASSIGMENTS::UP" << std::endl;
-            field->MoveUp();
-            fieldw.Print(field, player, &window, sprites);
-            this->step = NOTHING;
-            break;
+            case ASSIGMENTS::UP: {
+                //std::cout << "ASSIGMENTS::UP" << std::endl;
+                field->MoveUp();
+                fieldw.Print(field, player, &window, sprites);
+                this->step = NOTHING;
+                break;
+            }
 
-        case ASSIGMENTS::DOWN:
-            std::cout << "ASSIGMENTS::DOWN" << std::endl;
-            field->MoveDown();
-            fieldw.Print(field, player, &window, sprites);
-            this->step = NOTHING;
-            break;
-        
-        case ASSIGMENTS::RIGHT:
-            std::cout << "ASSIGMENTS::RIGHT" << std::endl;
-            field->MoveRight();
-            fieldw.Print(field, player, &window, sprites);
-            this->step = NOTHING;
-            break;
+            case ASSIGMENTS::DOWN: {
+                //std::cout << "ASSIGMENTS::DOWN" << std::endl;
+                field->MoveDown();
+                fieldw.Print(field, player, &window, sprites);
+                this->step = NOTHING;
+                break;
+            }
 
-        case ASSIGMENTS::LEFT:
-            std::cout << "ASSIGMENTS::LEFT" << std::endl;
-            field->MoveLeft();
-            fieldw.Print(field, player, &window, sprites);
-            this->step = NOTHING;
-            break;
+            case ASSIGMENTS::RIGHT: {
+                //std::cout << "ASSIGMENTS::RIGHT" << std::endl;
+                field->MoveRight();
+                fieldw.Print(field, player, &window, sprites);
+                this->step = NOTHING;
+                break;
+            }
 
-        case ASSIGMENTS::NOTHING:
-            //std::cout << "ASSIGMENTS::NOTHING" << std::endl;
-            //fieldw.Print(field, player, &window, sprites);
-            this->step = NOTHING;
-            break;
-        
+            case ASSIGMENTS::LEFT: {
+                //std::cout << "ASSIGMENTS::LEFT" << std::endl;
+                field->MoveLeft();
+                fieldw.Print(field, player, &window, sprites);
+                this->step = NOTHING;
+                break;
+            }
+
+            case ASSIGMENTS::SAVE: {
+                try {
+                    this->save_load_player->savePlayer(player);
+                    this->save_load_field->saveField(field);
+
+                    Message message(GAME, "Data has been saved!", log_info);
+                    Notify(message);
+                }
+                catch (SaveExeption& ex) {
+                    Message message(GAME, ex.getMessage(), log_info);
+                    Notify(message);
+                }
+                catch (FileExeption& ex) {
+                    Message message(GAME, ex.getMessage(), log_info);
+                    Notify(message);
+                }
+                catch (...) {
+                    Message message(GAME, "Unknown error: game's state has not been saved", log_info);
+                    Notify(message);
+                }
+                //this->step = NOTHING;
+                break;
+            }
+
+            case ASSIGMENTS::LOAD: {
+                Player* copy_player = this->player;
+                Field* copy_field = this->field;
+                try {
+                    this->player = this->save_load_player->loadPlayer(this->player);
+                    this->field = this->save_load_field->loadField(this->player, this->log_info);
+                    fieldw.Print(field, player, &window, sprites);
+
+                    Message message(GAME, "Data has been uploaded!", log_info);
+                    Notify(message);
+
+                }
+                catch (LoadExeption& ex) {
+                    //this->player = copy(this->player, this->cplayer);
+                    this->player = copy_player;
+                    this->field = copy_field;
+                    Message message(GAME, ex.getMessage(), log_info);
+                    Notify(message);
+                }
+                catch (FileExeption& ex) {
+                    this->player = copy_player;
+                    this->field = copy_field;
+                    Message message(GAME, ex.getMessage(), log_info);
+                    Notify(message);
+                }
+                catch (...) {
+                    this->player = copy_player;
+                    this->field = copy_field;
+                    Message message(GAME, "unknown error: game's state has not been uploaded!", log_info);
+                    Notify(message);
+                }
+                //this->step = NOTHING;
+                break;
+            }
+
+            case ASSIGMENTS::NOTHING: {
+                //std::cout << "ASSIGMENTS::NOTHING" << std::endl;
+                //fieldw.Print(field, player, &window, sprites);
+                this->step = NOTHING;
+                break;
+            }
+
+            //default:
+            //    this->step = NOTHING;
+            //    break;
         }
 
         ////проверка условия на проигрыш 
@@ -208,8 +276,58 @@ void Controller::Move() {
         }
     }
     //std::cout << "game over!" << std::endl;
-    Message message1(STATUS, "GAME OVER", this->log_info);
-    Notify(message1);
 
+
+    std::cout << "Do you want to load last save and continue?" << std::endl;
+    std::cout << "Y - Yes\n";
+    std::cout << "N - No\n";
+    char res;
+    std::cin >> res;
+    if (res != 'Y' and res != 'y') {
+        Message message(STATUS, "OUT", this->log_info);
+        Notify(message);
+        return;
+    }
+
+    /*sf::RenderWindow window(sf::VideoMode(800, 800), "OOP_GAME", sf::Style::Default);*/
+    player->SetEnd(false);
+
+    Message message2(STATUS, "CONTINUE", this->log_info);
+    Notify(message2);
+
+    Player* copy_player = this->player;
+    Field* copy_field = this->field;
+    try {
+        this->player = this->save_load_player->loadPlayer(this->player);
+        this->field = this->save_load_field->loadField(this->player, this->log_info);
+        fieldw.Print(field, player, &window, sprites);
+
+        Message message(GAME, "Data has been uploaded!", log_info);
+        Notify(message);
+
+    }
+    catch (LoadExeption& ex) {
+        //this->player = copy(this->player, this->cplayer);
+        this->player = copy_player;
+        this->field = copy_field;
+        Message message(GAME, ex.getMessage(), log_info);
+        Notify(message);
+    }
+    catch (FileExeption& ex) {
+        this->player = copy_player;
+        this->field = copy_field;
+        Message message(GAME, ex.getMessage(), log_info);
+        Notify(message);
+    }
+    catch (...) {
+        this->player = copy_player;
+        this->field = copy_field;
+        Message message(GAME, "unknown error: game's state has not been uploaded!", log_info);
+        Notify(message);
+    }
+
+    goto new_game;
+
+    //написать: вы хотите выйти или загрузить последнее сохранение?
     Sleep(5000);
 }

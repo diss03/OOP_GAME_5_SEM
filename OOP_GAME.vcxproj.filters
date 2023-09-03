@@ -58,6 +58,18 @@
     <Filter Include="Source Files\Base">
       <UniqueIdentifier>{e59fc568-70cb-48b4-b4b2-78f1481061c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Saving">
+      <UniqueIdentifier>{7ea55075-73f1-409e-9221-dc15872c3d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Saving">
+      <UniqueIdentifier>{d4e473ce-75ba-4eed-a48c-c6b4e96877f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exeptions">
+      <UniqueIdentifier>{84fdf27b-2ae7-4330-9775-9d03308b36ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exeptions">
+      <UniqueIdentifier>{effa0e0b-76f8-4a98-9d74-da96dd47491d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -155,6 +167,24 @@
     </ClCompile>
     <ClCompile Include="Generator.cpp">
       <Filter>Source Files\Generation</Filter>
+    </ClCompile>
+    <ClCompile Include="Hashing.cpp">
+      <Filter>Source Files\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLoadField.cpp">
+      <Filter>Source Files\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLoadPlayer.cpp">
+      <Filter>Source Files\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="FileExeption.cpp">
+      <Filter>Source Files\Exeptions</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadExeption.cpp">
+      <Filter>Source Files\Exeptions</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveExeption.cpp">
+      <Filter>Source Files\Exeptions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +316,27 @@
     </ClInclude>
     <ClInclude Include="Generator.h">
       <Filter>Header Files\Generation</Filter>
+    </ClInclude>
+    <ClInclude Include="Hashing.h">
+      <Filter>Header Files\Saving</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLoadField.h">
+      <Filter>Header Files\Saving</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveLoadPlayer.h">
+      <Filter>Header Files\Saving</Filter>
+    </ClInclude>
+    <ClInclude Include="FileExeption.h">
+      <Filter>Header Files\Exeptions</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonExeption.h">
+      <Filter>Header Files\Exeptions</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadExeption.h">
+      <Filter>Header Files\Exeptions</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveExeption.h">
+      <Filter>Header Files\Exeptions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

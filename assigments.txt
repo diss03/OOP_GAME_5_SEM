@@ -1,5 +1,7 @@
-RIGHT d
-LEFT a
-UP w
-DOWN s
-EXIT q
+RIGHT 
+LEFT s
+UP e
+DOWN d
+EXIT z
+SAVE x
+LOAD c

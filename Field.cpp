@@ -80,7 +80,7 @@ Field::Field(int height, int width, Player* player, InfoLog* info) {
 }
 
 // конструктор копирования(объект создается и копируется)
-Field::Field(const Field& copy) : height(copy.height), width(copy.width), x(copy.x), y(copy.y), player(copy.player) {
+Field::Field(const Field& copy) : height(copy.height), width(copy.width), x(copy.x), y(copy.y), player(copy.player), log_info(copy.log_info) {
     for (int i = 0; i < height; i++) {
         cells.push_back(std::vector<Cell>());
         for (int j = 0; j < width; j++) {
@@ -109,6 +109,7 @@ Field& Field::operator=(const Field& other) {
     x = other.x;
     y = other.y;
     player = other.player;
+    log_info = other.log_info;
 
     cells.resize(height); // pointers on lines
     //for (int i = 0; i < height; i++) 

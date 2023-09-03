@@ -50,6 +50,8 @@ public:
 
 	void SetDifficulty();
 	DIFFICULTY GetDifficulty();
+
+	//bool GetContinue();
 	
 };
 

@@ -36,6 +36,12 @@ void FileInput::SetCommands() {
         if (tmp == "EXIT" && CHAR != '\0') {
             current_moves[EXIT] = CHAR;
         }
+        if (tmp == "SAVE" && CHAR != '\0') {
+            current_moves[SAVE] = CHAR;
+        }
+        if (tmp == "LOAD" && CHAR != '\0') {
+            current_moves[LOAD] = CHAR;
+        }
     }
     for (auto i : current_moves)
         std::cout << i.first << " " << i.second << std::endl;  

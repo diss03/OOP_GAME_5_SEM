@@ -20,6 +20,9 @@
 #include "Hp.h"
 #include "Teleport.h"
 
+#include "SaveLoadField.h"
+#include "SaveLoadPlayer.h"
+
 
 class Controller : public Subject
 {
@@ -31,6 +34,12 @@ private:
 	InfoLog* log_info;
 	ASSIGMENTS step;
 	DIFFICULTY difficulty;
+
+	SaveLoadField* save_load_field;
+	SaveLoadPlayer* save_load_player;
+
+	//Field* copy_field;
+	//Player* copy_player;
 
 public:
 	//Controller() = default;

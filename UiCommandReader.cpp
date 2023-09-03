@@ -8,7 +8,7 @@ void UiCommandReader::SetStep(sf::RenderWindow* window) {
 		char_step = char(97 + ev_step.key.code);
 		std::cout << "CODE: " << ev_step.key.code << std::endl;
 		this->step = input_commands->GetAction(char_step);
-		std::cout << "Tupe: " << this->step << std::endl;
+		std::cout << "Type: " << this->step << std::endl;
 	}
 	else this->step = NOTHING;
 }

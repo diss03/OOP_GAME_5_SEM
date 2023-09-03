@@ -17,9 +17,9 @@ enum ASSIGMENTS
     UP,
     DOWN,
     NOTHING,
+    EXIT,
     SAVE,
-    LOAD,
-    EXIT
+    LOAD
 };
 
 enum DIFFICULTY {

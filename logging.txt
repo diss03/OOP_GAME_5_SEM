@@ -3091,3 +3091,616 @@ GAME: player was kicked
 GAME: player was kicked
 GAME: the win event was completed
 STATUS: GAME OVER
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: the win event was completed
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: player was kicked
+GAME: picked up a coin
+GAME: fiel has been changed
+GAME: fiel has been changed
+GAME: fiel has been changed
+GAME: player has been teleported
+GAME: fiel has been changed
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player has been teleported
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: the win event was completed
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: picked up a coin
+GAME: player was kicked
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: picked up a coin
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player has been teleported
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player has been teleported
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+STATUS: Game started!
+STATUS: Game started!
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: picked up a coin
+STATUS: GAME OVER
+STATUS: Game started!
+STATUS: Game started!
+GAME: player has been teleported
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player has been teleported
+STATUS: Game started!
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+STATUS: Game started!
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up a coin
+STATUS: Game started!
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up a coin
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player picked up a heal point
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: player picked up a heal point
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player was kicked
+STATUS: Game started!
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+STATUS: Game started!
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: fiel has been changed
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+STATUS: Game started!
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: player was kicked
+GAME: player has been teleported
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player was kicked
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been saved!
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player has been teleported
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: fiel has been changed
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player picked up a heal point
+GAME: picked up an armor point
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: player has been teleported
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: player picked up a heal point
+STATUS: Game started!
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: player picked up a heal point
+GAME: fiel has been changed
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: fiel has been changed
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: fiel has been changed
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: player was kicked
+GAME: player was kicked
+GAME: picked up a coin
+STATUS: Game started!
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: picked up a coin
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: picked up an armor point
+STATUS: Game started!
+GAME: picked up a coin
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: player picked up a heal point
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player was kicked
+STATUS: Game started!
+GAME: player was kicked
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: the win event was completed
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: picked up an armor point
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: picked up a coin
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player has been teleported
+GAME: the win event was completed
+STATUS: GAME OVER
+STATUS: Game started!
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: GAME OVER
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: the win event was completed
+STATUS: CONTINUE
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: CONTINUE
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: CONTINUE
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player has been teleported
+GAME: player was kicked
+GAME: picked up an armor point
+GAME: the win event was completed
+STATUS: CONTINUE
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: picked up an armor point
+GAME: picked up an armor point
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up an armor point
+GAME: the win event was completed
+STATUS: CONTINUE
+GAME: Data has been uploaded!
+GAME: Data has been uploaded!
+GAME: player was kicked
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: picked up a coin
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player was kicked
+GAME: player picked up a heal point
+GAME: player picked up a heal point
+GAME: picked up an armor point
+GAME: player picked up a heal point
+GAME: player was kicked
+GAME: player was kicked
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+GAME: player has been teleported
+GAME: picked up an armor point
+GAME: picked up a coin
+STATUS: Game started!
+GAME: player picked up a heal point
+GAME: picked up an armor point
