@@ -1,7 +1,7 @@
-RIGHT 
-LEFT s
-UP e
-DOWN d
+RIGHT d
+LEFT a
+UP w
+DOWN s
 EXIT z
 SAVE x
 LOAD c

@@ -12,13 +12,13 @@
 #include <SFML/Graphics.hpp>
 
 #include "FieldGenerator.h"
-#include "Armor.h"
-#include "Bank.h"
-#include "ChangeField.h"
-#include "Damage.h"
-#include "FiledBase.h"
-#include "Hp.h"
-#include "Teleport.h"
+#include "ArmorRule.h"
+#include "BankRule.h"
+#include "ChangeFieldRule.h"
+#include "DamageRule.h"
+#include "FiledBaseRule.h"
+#include "HpRule.h"
+#include "TeleportRule.h"
 
 #include "SaveLoadField.h"
 #include "SaveLoadPlayer.h"
@@ -44,7 +44,7 @@ private:
 public:
 	//Controller() = default;
 	Controller(CommandReader*, InfoLog*, DIFFICULTY);
-
 	void FieldGanerate();
 	void Move();
+	~Controller();
 };

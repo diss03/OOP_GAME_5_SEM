@@ -43,8 +43,8 @@ void FileInput::SetCommands() {
             current_moves[LOAD] = CHAR;
         }
     }
-    for (auto i : current_moves)
-        std::cout << i.first << " " << i.second << std::endl;  
-
     CheckAssigment();
+    std::cout << "Move settings:" << std::endl;
+    for (auto i : current_moves)
+        std::cout << i.first << " " << i.second << std::endl;
 }

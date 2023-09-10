@@ -3,8 +3,8 @@
 class Mediator
 {
 public:
-    void Start();
     Mediator() = default;
+    void Start();
     ~Mediator() = default;
 };
 

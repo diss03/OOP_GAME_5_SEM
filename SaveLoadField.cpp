@@ -83,7 +83,7 @@ Field* SaveLoadField::loadField(Player* player, InfoLog* log_info) {
 
     if (height <= 0 or width <= 0 or x > (height-1) or y > (width-1) or x < 0 or y < 0) {
         file_output.close();
-        throw LoadExeption("invalid filed data if file" + filename + "!");
+        throw LoadExeption("invalid filed data if file " + filename + "!");
     }
     if (checkHashMatching() == false) {
         file_output.close();

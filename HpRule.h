@@ -6,8 +6,9 @@
 
 #include "random"
 
+
 template<DIFFICULTY T>
-class ChangeField
+class HpRule
 {
 public:
     void operator()(EventCreator& ev_cr) {
@@ -26,9 +27,8 @@ public:
             for (int j{}; j < width; j++) {
                 if (dist(rd) == 1) {
                     if ((*cells)[i][j].GetObject() == Cell::COMMON && !(*cells)[i][j].GetActive()) {
-                        (*cells)[i][j].SetPlayersEvents(ev_cr.CreateChangeFieldEvent());
-                        (*cells)[i][j].SetObject(Cell::CHANGEFIELD);
-                        return;
+                        (*cells)[i][j].SetPlayersEvents(ev_cr.CreateHpEvent());
+                        (*cells)[i][j].SetObject(Cell::HP);
                     }
                 }
             }

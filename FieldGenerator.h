@@ -1,17 +1,13 @@
 #pragma once
 #include "Field.h"
-//#include "Generator.h"
 #include "EventCreator.h"
 #include "Enums.h"
 
 //template<class Rules1, class Rules2, class Rules3, class Rules4, class Rules5, class Rules6, class Rules7>
 template<class ... Rules>
-class FieldGenerator /*: public Generator*/
+class FieldGenerator
 {
 public:
-    //FieldGenerator(Rules ...) = default;
-    //FieldGenerator(Rules... rules);
-    
     Field* generate(int height = 10, int width = 10, Player* player = nullptr, InfoLog* log_info = nullptr){
         Field* field = new Field(height, width, player, log_info);
         EventCreator ev_cr = EventCreator(field, player);

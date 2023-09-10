@@ -152,7 +152,6 @@
     <ClCompile Include="FileInput.cpp" />
     <ClCompile Include="FileLogger.cpp" />
     <ClCompile Include="GameObserver.cpp" />
-    <ClCompile Include="Generator.cpp" />
     <ClCompile Include="Hashing.cpp" />
     <ClCompile Include="HpEvent.cpp" />
     <ClCompile Include="InfoLog.cpp" />
@@ -172,19 +171,19 @@
     <ClCompile Include="WinEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Armor.h" />
+    <ClInclude Include="ArmorRule.h" />
     <ClInclude Include="ArmorEvent.h" />
     <ClInclude Include="Assigments.h" />
-    <ClInclude Include="Bank.h" />
+    <ClInclude Include="BankRule.h" />
     <ClInclude Include="BankEvent.h" />
     <ClInclude Include="Cell.h" />
-    <ClInclude Include="ChangeField.h" />
+    <ClInclude Include="ChangeFieldRule.h" />
     <ClInclude Include="ChangeFieldEvent.h" />
     <ClInclude Include="CmdCommandReader.h" />
     <ClInclude Include="CmdLogger.h" />
     <ClInclude Include="CommandReader.h" />
     <ClInclude Include="Controller.h" />
-    <ClInclude Include="Damage.h" />
+    <ClInclude Include="DamageRule.h" />
     <ClInclude Include="DamageEvent.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="ErrorObserver.h" />
@@ -194,15 +193,14 @@
     <ClInclude Include="FieldEvent.h" />
     <ClInclude Include="FieldGenerator.h" />
     <ClInclude Include="FieldView.h" />
-    <ClInclude Include="FiledBase.h" />
+    <ClInclude Include="FiledBaseRule.h" />
     <ClInclude Include="FileExeption.h" />
     <ClInclude Include="FileInput.h" />
     <ClInclude Include="FileLogger.h" />
     <ClInclude Include="CommonExeption.h" />
     <ClInclude Include="GameObserver.h" />
-    <ClInclude Include="Generator.h" />
     <ClInclude Include="Hashing.h" />
-    <ClInclude Include="Hp.h" />
+    <ClInclude Include="HpRule.h" />
     <ClInclude Include="HpEvent.h" />
     <ClInclude Include="InfoLog.h" />
     <ClInclude Include="LoadExeption.h" />
@@ -218,7 +216,7 @@
     <ClInclude Include="SaveLoadPlayer.h" />
     <ClInclude Include="StatusObserver.h" />
     <ClInclude Include="Subject.h" />
-    <ClInclude Include="Teleport.h" />
+    <ClInclude Include="TeleportRule.h" />
     <ClInclude Include="TeleportEvent.h" />
     <ClInclude Include="UiCommandReader.h" />
     <ClInclude Include="WinEvent.h" />

@@ -9,11 +9,10 @@ class Assigments
 public:
     virtual void SetCommands() = 0;
     ASSIGMENTS GetAction(char);
+    void CheckAssigment();
     virtual ~Assigments() = default;
 
 protected:
-    void CheckAssigment();
-
     std::map<ASSIGMENTS, char> current_moves = {
             {ASSIGMENTS::UP,    '\0'},
             {ASSIGMENTS::DOWN,  '\0'},

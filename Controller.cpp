@@ -37,15 +37,14 @@ Controller::Controller(CommandReader* comread, InfoLog* log_info, DIFFICULTY dif
 // ńîçäŕĺě ýęçĺěďë˙đ ęëŕńńŕ ďîëĺ č óćĺ ń íčě đŕáîňŕĺě, čěĺ˙ ďđč ńĺáĺ ýęçĺěďë˙đ ęëŕńńŕ ęîěěŕíä-đčäĺđ čç ěýéíŕ//
  
 void Controller::FieldGanerate() {
-    //Generator* generator;
     if (difficulty == EASY) {
-        //FieldGenerator* generator = new ;
-        FieldGenerator<FiledBase<EASY>, Armor<EASY>, Bank<EASY>, ChangeField<EASY>, Damage<EASY>, Hp<EASY>, Teleport<EASY>> generator;
+        FieldGenerator<FiledBaseRule<EASY>, ArmorRule<EASY>, BankRule<EASY>, ChangeFieldRule<EASY>,
+            DamageRule<EASY>, HpRule<EASY>, TeleportRule<EASY>> generator;
         this->field = generator.generate(this->comread->GetHeight(), this->comread->GetWidth(), this->player, this->log_info);
     }
     else if (difficulty == HARD){
-        //FieldGenerator* generator = new FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>>;
-        FieldGenerator<FiledBase<HARD>, Armor<HARD>, Bank<HARD>, ChangeField<HARD>, Damage<HARD>, Hp<HARD>, Teleport<HARD>> generator;
+        FieldGenerator<FiledBaseRule<HARD>, ArmorRule<HARD>, BankRule<HARD>, ChangeFieldRule<HARD>,
+            DamageRule<HARD>, HpRule<HARD>, TeleportRule<HARD>> generator;
         this->field = generator.generate(this->comread->GetHeight(),this->comread->GetWidth(), this->player, this->log_info);
     }
 }
@@ -292,6 +291,7 @@ void Controller::Move() {
     if (res != 'Y' and res != 'y') {
         Message message(STATUS, "OUT", this->log_info);
         Notify(message);
+        Sleep(5000);
         return;
     }
 
@@ -335,5 +335,12 @@ void Controller::Move() {
     goto new_game;
 
     //написать: вы хотите выйти или загрузить последнее сохранение?
-    Sleep(5000);
+    
+}
+
+Controller::~Controller() {
+    delete player;
+    delete field;
+    delete save_load_field;
+    delete save_load_player;
 }

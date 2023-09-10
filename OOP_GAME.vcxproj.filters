@@ -165,9 +165,6 @@
     <ClCompile Include="FieldGenerator.cpp">
       <Filter>Source Files\Generation</Filter>
     </ClCompile>
-    <ClCompile Include="Generator.cpp">
-      <Filter>Source Files\Generation</Filter>
-    </ClCompile>
     <ClCompile Include="Hashing.cpp">
       <Filter>Source Files\Saving</Filter>
     </ClCompile>
@@ -290,31 +287,28 @@
     <ClInclude Include="Mediator.h">
       <Filter>Header Files\Control</Filter>
     </ClInclude>
-    <ClInclude Include="Armor.h">
+    <ClInclude Include="ArmorRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
-    <ClInclude Include="Bank.h">
+    <ClInclude Include="BankRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
-    <ClInclude Include="ChangeField.h">
+    <ClInclude Include="ChangeFieldRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
-    <ClInclude Include="Damage.h">
+    <ClInclude Include="DamageRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
-    <ClInclude Include="Hp.h">
+    <ClInclude Include="HpRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
-    <ClInclude Include="Teleport.h">
+    <ClInclude Include="TeleportRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
-    <ClInclude Include="FiledBase.h">
+    <ClInclude Include="FiledBaseRule.h">
       <Filter>Header Files\Generation\Rules</Filter>
     </ClInclude>
     <ClInclude Include="FieldGenerator.h">
-      <Filter>Header Files\Generation</Filter>
-    </ClInclude>
-    <ClInclude Include="Generator.h">
       <Filter>Header Files\Generation</Filter>
     </ClInclude>
     <ClInclude Include="Hashing.h">

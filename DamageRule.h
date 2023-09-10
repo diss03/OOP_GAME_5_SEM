@@ -6,9 +6,8 @@
 
 #include "random"
 
-
 template<DIFFICULTY T>
-class Armor
+class DamageRule
 {
 public:
     void operator()(EventCreator& ev_cr) {
@@ -21,14 +20,14 @@ public:
 
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dist(1, width + height - (width + height) % (T * 5));
+        std::uniform_int_distribution<> dist(1, width + height - (width + height) % (T * 3));
 
         for (int i{}; i < height; i++) {
             for (int j{}; j < width; j++) {
                 if (dist(rd) == 1) {
-                    if ((*cells)[i][j].GetObject() == Cell::COMMON && !(*cells)[i][j].GetActive()){
-                        (*cells)[i][j].SetPlayersEvents(ev_cr.CreateArmorEventEvent());
-                        (*cells)[i][j].SetObject(Cell::ARMOR);
+                    if ((*cells)[i][j].GetObject() == Cell::COMMON && !(*cells)[i][j].GetActive()) {
+                        (*cells)[i][j].SetPlayersEvents(ev_cr.CreateDamageEvent());
+                        (*cells)[i][j].SetObject(Cell::DAMAGE);
                     }
                 }
             }

@@ -32,10 +32,10 @@ bool Hashing::checkHashMatching() {
     }
 
     char c;
-    int new_hash = 0;
+    int new_hash = 1;
     file.get(c);
     while (c != '#') {
-        new_hash += new_hash *7 + (int)c;
+        new_hash += new_hash*7 + (int)c;
         file.get(c);
         if (file.eof() || file.fail()) {
             throw LoadExeption("file " + filename + " was changed!");
@@ -43,6 +43,7 @@ bool Hashing::checkHashMatching() {
     }
     int old_hash;
     file >> old_hash;
+    //std::cout << old_hash << new_hash << std::endl;
     if (old_hash != new_hash) {
         file.close();
         return false;

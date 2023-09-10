@@ -9,9 +9,7 @@ class FileInput : public Assigments
 {
 public:
     FileInput(std::string filename);
-
     void SetCommands() override;
-
     ~FileInput() override;
 
 private:

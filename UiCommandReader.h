@@ -3,5 +3,5 @@
 
 class UiCommandReader : public CommandReader
 {
-	void SetStep(sf::RenderWindow*) override;
+	void SetStep(sf::RenderWindow*) final;
 };

@@ -1,5 +1,6 @@
 #include "SaveLoadPlayer.h"
 #include "iostream"
+#include <typeinfo>
 
 void SaveLoadPlayer::savePlayer(Player* player) {
 
@@ -34,10 +35,9 @@ Player* SaveLoadPlayer::loadPlayer(Player* player) {
     file_output >> bank;
     file_output >> armor;
 
-
     if (hp <= 0 or hp > 100 or bank < 0 or bank > 3 or armor < 0 or armor > 100) {
         file_output.close();
-        throw LoadExeption("incorrect player's data!");
+        throw LoadExeption("incorrect player's data in file: " + filename +"!");
     }
 
     player->SetHealth(hp);

@@ -3755,3 +3755,882 @@ GAME: player was kicked
 GAME: player moved down on 4:1 cell
 GAME: player moved right on 4:2 cell
 GAME: player moved left on 4:1 cell
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: player moved down on 2:1 cell
+GAME: player was kicked
+GAME: player moved down on 3:1 cell
+GAME: player was kicked
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+GAME: player moved right on 3:2 cell
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+GAME: player moved left on 3:1 cell
+GAME: player moved left on 3:0 cell
+GAME: player moved down on 4:0 cell
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+GAME: player moved down on 5:0 cell
+GAME: player moved right on 5:1 cell
+GAME: player moved right on 5:2 cell
+GAME: player moved right on 5:3 cell
+GAME: player moved down on 6:3 cell
+GAME: player moved down on 7:3 cell
+ERROR: player try to move on wall-cell
+GAME: player moved down on 8:3 cell
+GAME: player moved right on 8:4 cell
+ERROR: player try to move on wall-cell
+GAME: player moved right on 8:5 cell
+GAME: player moved up on 7:5 cell
+GAME: player moved up on 6:5 cell
+GAME: player moved left on 6:4 cell
+GAME: player moved up on 5:4 cell
+GAME: player moved up on 4:4 cell
+GAME: player picked up a heal point
+GAME: player moved up on 3:4 cell
+GAME: player was kicked
+GAME: player moved up on 2:4 cell
+GAME: player was kicked
+GAME: player moved left on 2:3 cell
+GAME: picked up a coin
+GAME: player moved left on 2:2 cell
+GAME: player moved left on 2:1 cell
+GAME: player moved left on 2:0 cell
+GAME: player moved up on 1:0 cell
+GAME: picked up a coin
+GAME: player moved down on 2:0 cell
+GAME: player moved down on 3:0 cell
+GAME: player moved right on 3:1 cell
+GAME: player moved right on 3:2 cell
+GAME: player moved right on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: player moved right on 3:5 cell
+GAME: player moved right on 3:6 cell
+GAME: picked up a coin
+GAME: player moved left on 3:5 cell
+GAME: player moved down on 4:5 cell
+GAME: player moved down on 5:5 cell
+GAME: player moved down on 6:5 cell
+GAME: player moved down on 7:5 cell
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: player moved right on 1:2 cell
+GAME: player moved right on 1:3 cell
+GAME: player moved down on 2:3 cell
+GAME: player picked up a heal point
+GAME: player moved left on 2:2 cell
+GAME: player picked up a heal point
+GAME: Data has been saved!
+GAME: player moved right on 2:3 cell
+GAME: player moved down on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: Data has been uploaded!
+GAME: player moved right on 2:3 cell
+ERROR: player try to move on wall-cell
+GAME: player moved down on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: player moved right on 3:5 cell
+GAME: player moved right on 3:6 cell
+GAME: picked up a coin
+GAME: player moved left on 3:5 cell
+GAME: player moved down on 4:5 cell
+GAME: player moved right on 4:6 cell
+GAME: player moved up on 3:6 cell
+GAME: Data has been saved!
+GAME: Uploading error in: invalid filed data if filesaving.txt!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: player moved right on 1:2 cell
+GAME: player moved right on 1:3 cell
+GAME: player moved left on 1:2 cell
+GAME: player moved left on 1:1 cell
+GAME: player moved left on 1:0 cell
+GAME: player moved down on 2:0 cell
+GAME: picked up an armor point
+GAME: player moved right on 2:1 cell
+GAME: picked up a coin
+GAME: player moved right on 2:2 cell
+GAME: player moved up on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved down on 4:2 cell
+GAME: player moved left on 4:1 cell
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: player moved right on 1:2 cell
+GAME: picked up a coin
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved right on 3:3 cell
+ERROR: player try to move on wall-cell
+GAME: player moved down on 4:3 cell
+GAME: player moved right on 4:4 cell
+GAME: player moved right on 4:5 cell
+GAME: player moved down on 5:5 cell
+GAME: player moved down on 6:5 cell
+GAME: player moved up on 5:5 cell
+GAME: player moved up on 4:5 cell
+GAME: Data has been saved!
+GAME: player moved right on 4:6 cell
+GAME: player moved right on 4:7 cell
+GAME: player moved right on 4:8 cell
+GAME: player moved up on 3:8 cell
+GAME: player moved left on 3:7 cell
+GAME: Data has been uploaded!
+GAME: player moved right on 5:1 cell
+GAME: player moved right on 5:2 cell
+GAME: player moved right on 5:3 cell
+GAME: player moved up on 4:3 cell
+GAME: player moved up on 3:3 cell
+GAME: player moved up on 2:3 cell
+GAME: player moved right on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: player moved right on 2:2 cell
+GAME: player moved right on 2:3 cell
+GAME: player moved right on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: player moved down on 3:1 cell
+GAME: player moved down on 4:1 cell
+GAME: player moved down on 5:1 cell
+GAME: player moved right on 5:2 cell
+GAME: player moved right on 5:3 cell
+GAME: player moved right on 5:0 cell
+GAME: player moved down on 6:0 cell
+GAME: player moved down on 7:0 cell
+GAME: player moved right on 7:1 cell
+GAME: player moved right on 7:2 cell
+GAME: player moved right on 7:3 cell
+GAME: player moved right on 7:0 cell
+GAME: player moved up on 6:0 cell
+GAME: player moved up on 5:0 cell
+GAME: player moved up on 4:0 cell
+GAME: player moved up on 3:0 cell
+GAME: player moved up on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: player moved right on 2:2 cell
+GAME: player moved right on 2:3 cell
+GAME: player moved right on 2:0 cell
+GAME: player moved up on 1:0 cell
+GAME: Data has been uploaded!
+GAME: player moved left on 5:3 cell
+GAME: player moved down on 6:3 cell
+GAME: player moved down on 7:3 cell
+GAME: player moved left on 7:2 cell
+GAME: player moved left on 7:1 cell
+GAME: player moved up on 6:1 cell
+GAME: player moved up on 5:1 cell
+GAME: player moved up on 4:1 cell
+GAME: Data has been uploaded!
+GAME: Uploading error in: incorrect player's data in file: saving.txt!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved right on 0:3 cell
+GAME: player moved down on 1:3 cell
+GAME: player moved down on 2:3 cell
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: Uploading error in: invalid player's data in file: saving.txt!
+GAME: Data has been saved!
+GAME: Uploading error in: invalid player's data in file: saving.txt!
+GAME: player moved down on 3:3 cell
+GAME: player picked up a heal point
+GAME: player moved down on 4:3 cell
+GAME: player moved down on 5:3 cell
+GAME: player moved right on 5:4 cell
+GAME: player moved right on 5:5 cell
+GAME: player moved right on 5:6 cell
+GAME: player moved up on 4:6 cell
+GAME: player moved up on 3:6 cell
+GAME: player moved up on 2:6 cell
+GAME: player has been teleported
+GAME: player moved right on 8:2 cell
+GAME: player moved right on 8:3 cell
+GAME: player moved right on 8:4 cell
+GAME: player has been teleported
+GAME: player moved up on 2:8 cell
+GAME: player moved left on 2:7 cell
+GAME: player moved left on 2:6 cell
+GAME: player moved left on 2:5 cell
+GAME: player moved up on 1:5 cell
+GAME: player was kicked
+GAME: player moved right on 1:6 cell
+ERROR: player try to move on wall-cell
+GAME: player moved up on 0:6 cell
+GAME: player moved right on 0:7 cell
+GAME: player moved right on 0:8 cell
+GAME: player moved right on 0:9 cell
+GAME: picked up a coin
+GAME: player moved down on 1:9 cell
+GAME: player moved down on 2:9 cell
+GAME: player moved down on 3:9 cell
+GAME: player moved down on 4:9 cell
+GAME: player moved down on 5:9 cell
+GAME: player moved left on 5:8 cell
+GAME: player moved left on 5:7 cell
+GAME: player was kicked
+GAME: player moved left on 5:6 cell
+GAME: player moved down on 6:6 cell
+GAME: player moved down on 7:6 cell
+GAME: player moved left on 7:5 cell
+GAME: picked up a coin
+GAME: player moved left on 7:4 cell
+GAME: player was kicked
+GAME: player moved right on 7:5 cell
+GAME: player moved right on 7:6 cell
+GAME: player moved right on 7:7 cell
+GAME: player was kicked
+GAME: player moved right on 7:8 cell
+GAME: player moved down on 8:8 cell
+GAME: player moved right on 8:9 cell
+GAME: player moved up on 7:9 cell
+GAME: player was kicked
+GAME: player losed
+STATUS: OUT
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player has been teleported
+GAME: player moved down on 7:7 cell
+GAME: Data has been saved!
+GAME: player moved left on 7:6 cell
+GAME: Data has been saved!
+GAME: Uploading error in: invalid player's data in file: saving.txt!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: picked up a coin
+GAME: player moved down on 1:1 cell
+GAME: player moved down on 2:1 cell
+GAME: player moved down on 3:1 cell
+GAME: player moved right on 3:2 cell
+GAME: player moved right on 3:3 cell
+GAME: player moved down on 4:3 cell
+GAME: picked up an armor point
+GAME: player moved down on 5:3 cell
+GAME: picked up an armor point
+GAME: player moved left on 5:2 cell
+GAME: player moved down on 6:2 cell
+GAME: Data has been saved!
+GAME: player moved down on 7:2 cell
+GAME: player moved right on 7:3 cell
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+GAME: player moved right on 7:4 cell
+GAME: player moved right on 7:5 cell
+GAME: player moved up on 6:5 cell
+GAME: picked up an armor point
+GAME: player moved up on 5:5 cell
+GAME: player moved up on 4:5 cell
+GAME: Uploading error in: invalid player's data in file: saving.txt!
+GAME: player moved left on 4:4 cell
+GAME: player moved down on 5:4 cell
+GAME: player moved left on 5:3 cell
+GAME: player moved up on 4:3 cell
+GAME: player moved up on 3:3 cell
+GAME: Data has been saved!
+GAME: player moved right on 3:4 cell
+GAME: player moved up on 2:4 cell
+GAME: player moved right on 2:5 cell
+GAME: player moved right on 2:6 cell
+GAME: player moved right on 2:7 cell
+GAME: player moved down on 3:7 cell
+GAME: player moved right on 3:8 cell
+GAME: player moved down on 4:8 cell
+GAME: player was kicked
+GAME: player moved left on 4:7 cell
+GAME: player moved left on 4:6 cell
+GAME: player moved down on 5:6 cell
+GAME: Uploading error in: invalid player's data in file: saving.txt!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player was kicked
+GAME: player moved down on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved right on 2:3 cell
+GAME: player moved right on 2:4 cell
+GAME: player was kicked
+GAME: player moved down on 3:4 cell
+GAME: player moved left on 3:3 cell
+GAME: picked up an armor point
+GAME: player moved down on 4:3 cell
+GAME: player moved down on 5:3 cell
+GAME: player moved down on 6:3 cell
+GAME: player moved right on 6:4 cell
+GAME: player picked up a heal point
+GAME: Data has been saved!
+GAME: player moved right on 6:5 cell
+GAME: Data has been uploaded!
+GAME: player moved up on 5:4 cell
+GAME: player moved right on 5:5 cell
+GAME: player moved up on 4:5 cell
+GAME: player moved right on 4:6 cell
+GAME: player was kicked
+GAME: player moved right on 4:7 cell
+GAME: player moved up on 3:7 cell
+GAME: player moved up on 2:7 cell
+GAME: player moved up on 1:7 cell
+GAME: picked up a coin
+GAME: player moved up on 0:7 cell
+GAME: picked up a coin
+GAME: player moved right on 0:8 cell
+GAME: player moved right on 0:9 cell
+GAME: picked up a coin
+GAME: player moved down on 1:9 cell
+GAME: player moved left on 1:8 cell
+GAME: Data has been saved!
+GAME: player moved left on 1:7 cell
+GAME: player moved down on 2:7 cell
+GAME: player moved left on 2:6 cell
+GAME: player has been teleported
+GAME: player moved left on 4:2 cell
+GAME: Data has been saved!
+GAME: player moved down on 5:2 cell
+GAME: player moved right on 5:3 cell
+GAME: Data has been saved!
+GAME: player moved down on 6:3 cell
+GAME: player moved down on 7:3 cell
+GAME: player moved down on 8:3 cell
+GAME: player moved left on 8:2 cell
+GAME: player moved left on 8:1 cell
+GAME: picked up an armor point
+GAME: player moved down on 9:1 cell
+GAME: player was kicked
+GAME: player moved up on 8:1 cell
+GAME: player moved up on 7:1 cell
+GAME: player moved up on 6:1 cell
+GAME: player moved up on 5:1 cell
+GAME: player moved right on 5:2 cell
+GAME: player moved up on 4:2 cell
+GAME: player moved up on 3:2 cell
+GAME: player moved left on 3:1 cell
+GAME: fiel has been changed
+GAME: Data has been saved!
+GAME: player moved down on 1:0 cell
+GAME: player moved down on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: fiel has been changed
+GAME: Data has been saved!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: player moved right on 1:2 cell
+GAME: player moved up on 0:2 cell
+GAME: player was kicked
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: picked up a coin
+GAME: player moved down on 1:1 cell
+GAME: player moved down on 2:1 cell
+GAME: player moved down on 3:1 cell
+GAME: player moved right on 3:2 cell
+GAME: player moved right on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: player moved up on 2:4 cell
+GAME: Data has been saved!
+GAME: player moved left on 2:3 cell
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: player moved down on 3:3 cell
+GAME: Uploading error in: invalid filed data if file saving.txt!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: Data has been saved!
+GAME: Data has been uploaded!
+GAME: player moved right on 1:3 cell
+GAME: player picked up a heal point
+GAME: player moved down on 2:3 cell
+GAME: Data has been uploaded!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved right on 2:3 cell
+GAME: player moved right on 2:4 cell
+GAME: player moved up on 1:4 cell
+GAME: picked up a coin
+GAME: player moved down on 2:4 cell
+GAME: player moved down on 3:4 cell
+GAME: Data has been saved!
+GAME: Uploading error in: file saving.txt have been changed!
+STATUS: Game started!
+GAME: player moved down on 1:0 cell
+GAME: picked up a coin
+ERROR: player try to move on wall-cell
+GAME: player moved down on 2:0 cell
+GAME: player moved right on 2:1 cell
+ERROR: player try to move on wall-cell
+GAME: player moved down on 3:1 cell
+GAME: player moved right on 3:2 cell
+GAME: player moved right on 3:3 cell
+GAME: player moved up on 2:3 cell
+GAME: player moved up on 1:3 cell
+GAME: player moved left on 1:2 cell
+GAME: picked up a coin
+GAME: player moved right on 1:3 cell
+GAME: player moved right on 1:4 cell
+GAME: player moved right on 1:5 cell
+GAME: player was kicked
+GAME: player moved right on 1:6 cell
+GAME: player moved right on 1:7 cell
+GAME: picked up an armor point
+GAME: player moved up on 0:7 cell
+GAME: player was kicked
+GAME: player moved right on 0:8 cell
+GAME: player moved down on 1:8 cell
+GAME: player was kicked
+GAME: player moved down on 2:8 cell
+GAME: player moved down on 3:8 cell
+GAME: player was kicked
+GAME: player moved left on 3:7 cell
+GAME: player moved left on 3:6 cell
+GAME: player moved up on 2:6 cell
+GAME: player has been teleported
+GAME: player moved down on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: player moved down on 3:1 cell
+GAME: player moved down on 4:1 cell
+GAME: player moved right on 4:2 cell
+GAME: player moved right on 4:3 cell
+GAME: player moved up on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: player has been teleported
+GAME: player moved down on 3:8 cell
+GAME: player moved down on 4:8 cell
+GAME: player moved left on 4:7 cell
+GAME: player moved left on 4:6 cell
+GAME: player moved down on 5:6 cell
+GAME: picked up an armor point
+GAME: player moved down on 6:6 cell
+GAME: player moved down on 7:6 cell
+GAME: player moved right on 7:7 cell
+GAME: player moved right on 7:8 cell
+GAME: player moved right on 7:9 cell
+GAME: player moved up on 6:9 cell
+GAME: player picked up a heal point
+GAME: player moved down on 7:9 cell
+GAME: player moved down on 8:9 cell
+GAME: player was kicked
+GAME: player moved left on 8:8 cell
+GAME: player moved left on 8:7 cell
+GAME: player moved left on 8:6 cell
+GAME: player moved left on 8:5 cell
+GAME: player moved left on 8:4 cell
+GAME: player moved left on 8:3 cell
+GAME: player moved up on 7:3 cell
+GAME: player moved up on 6:3 cell
+GAME: player picked up a heal point
+GAME: player moved up on 5:3 cell
+GAME: player moved up on 4:3 cell
+GAME: player moved up on 3:3 cell
+GAME: player moved up on 2:3 cell
+GAME: player moved up on 1:3 cell
+GAME: player moved left on 1:2 cell
+GAME: player moved up on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved right on 1:3 cell
+GAME: player moved down on 2:3 cell
+GAME: player moved down on 3:3 cell
+GAME: player moved down on 4:3 cell
+GAME: player moved down on 5:3 cell
+GAME: player moved down on 6:3 cell
+GAME: player moved down on 7:3 cell
+GAME: player moved down on 8:3 cell
+GAME: player moved left on 8:2 cell
+GAME: player moved left on 8:1 cell
+GAME: player moved left on 8:0 cell
+GAME: player moved up on 7:0 cell
+GAME: picked up a coin
+GAME: player moved up on 6:0 cell
+GAME: picked up an armor point
+GAME: player moved up on 5:0 cell
+GAME: player was kicked
+GAME: player moved up on 4:0 cell
+GAME: player moved right on 4:1 cell
+GAME: player moved right on 4:2 cell
+GAME: player moved right on 4:3 cell
+GAME: player moved up on 3:3 cell
+GAME: player moved up on 2:3 cell
+GAME: player moved up on 1:3 cell
+GAME: player moved left on 1:2 cell
+GAME: player moved up on 0:2 cell
+GAME: the win event was completed
+STATUS: OUT
+STATUS: Game started!
+GAME: player moved down on 1:0 cell
+GAME: player moved down on 2:0 cell
+GAME: player picked up a heal point
+GAME: player moved down on 3:0 cell
+GAME: player moved right on 3:1 cell
+GAME: player moved down on 4:1 cell
+GAME: player moved right on 4:2 cell
+GAME: player picked up a heal point
+GAME: player has been teleported
+GAME: player moved right on 6:9 cell
+GAME: player moved left on 6:8 cell
+GAME: player moved left on 6:7 cell
+GAME: player has been teleported
+GAME: player moved left on 2:9 cell
+GAME: player moved left on 2:8 cell
+GAME: player moved left on 2:7 cell
+GAME: player moved up on 1:7 cell
+GAME: player moved left on 1:6 cell
+GAME: player was kicked
+GAME: player moved left on 1:5 cell
+GAME: picked up a coin
+GAME: player moved left on 1:4 cell
+GAME: player moved down on 2:4 cell
+GAME: player moved down on 3:4 cell
+GAME: player moved down on 4:4 cell
+GAME: player was kicked
+GAME: player moved left on 4:3 cell
+GAME: player was kicked
+GAME: player moved right on 4:4 cell
+GAME: player moved down on 5:4 cell
+GAME: player moved down on 6:4 cell
+GAME: player moved down on 7:4 cell
+GAME: player was kicked
+GAME: player moved left on 7:3 cell
+GAME: player moved down on 8:3 cell
+GAME: player moved down on 9:3 cell
+GAME: player was kicked
+GAME: player losed
+STATUS: OUT
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved down on 4:2 cell
+GAME: player moved left on 4:1 cell
+GAME: player moved left on 4:0 cell
+GAME: player moved down on 5:0 cell
+GAME: player moved right on 5:1 cell
+GAME: player moved up on 4:1 cell
+GAME: player moved up on 3:1 cell
+GAME: player moved right on 3:2 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Data has been saved!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved right on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: player moved right on 3:5 cell
+GAME: Data has been saved!
+GAME: player moved down on 4:5 cell
+GAME: player moved down on 5:5 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved left on 5:4 cell
+GAME: player moved left on 5:3 cell
+GAME: picked up an armor point
+GAME: player moved up on 4:3 cell
+GAME: player picked up a heal point
+GAME: player moved down on 5:3 cell
+GAME: player moved down on 6:3 cell
+GAME: player moved down on 7:3 cell
+GAME: picked up a coin
+GAME: player moved left on 7:2 cell
+GAME: player moved left on 7:1 cell
+GAME: Data has been saved!
+GAME: Data has been saved!
+GAME: Uploading error in: file saving.txt have been changed!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: fiel has been changed
+GAME: player moved right on 0:1 cell
+GAME: picked up an armor point
+GAME: player moved right on 0:2 cell
+GAME: fiel has been changed
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player was kicked
+GAME: player moved down on 1:2 cell
+GAME: player picked up a heal point
+GAME: player moved down on 2:2 cell
+GAME: player picked up a heal point
+GAME: player moved left on 2:1 cell
+GAME: picked up a coin
+GAME: player moved left on 2:0 cell
+GAME: player moved right on 2:1 cell
+GAME: player moved right on 2:2 cell
+GAME: player moved right on 2:3 cell
+GAME: player moved up on 1:3 cell
+GAME: player moved up on 0:3 cell
+GAME: picked up a coin
+GAME: player moved left on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved left on 3:1 cell
+GAME: player moved right on 3:2 cell
+GAME: player moved right on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: player was kicked
+GAME: player moved right on 3:5 cell
+GAME: player moved up on 2:5 cell
+GAME: player moved left on 2:4 cell
+GAME: picked up an armor point
+GAME: player moved left on 2:3 cell
+GAME: player moved right on 2:4 cell
+GAME: player moved right on 2:5 cell
+GAME: player moved right on 2:6 cell
+GAME: player was kicked
+GAME: player moved down on 3:6 cell
+GAME: picked up an armor point
+GAME: player has been teleported
+GAME: player moved down on 6:6 cell
+GAME: player picked up a heal point
+GAME: player moved down on 7:6 cell
+GAME: player moved up on 6:6 cell
+GAME: player moved up on 5:6 cell
+GAME: player moved up on 4:6 cell
+GAME: player has been teleported
+GAME: player moved up on 0:4 cell
+GAME: player moved down on 1:4 cell
+GAME: player moved down on 2:4 cell
+GAME: player moved down on 3:4 cell
+GAME: player moved down on 4:4 cell
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved right on 0:3 cell
+GAME: player moved down on 1:3 cell
+GAME: player was kicked
+GAME: player moved down on 2:3 cell
+GAME: player moved down on 3:3 cell
+GAME: Data has been saved!
+GAME: player moved down on 4:3 cell
+GAME: player moved left on 4:2 cell
+GAME: player moved left on 4:1 cell
+GAME: player picked up a heal point
+GAME: player moved down on 5:1 cell
+GAME: player has been teleported
+GAME: player moved down on 4:5 cell
+GAME: player moved left on 4:4 cell
+GAME: player moved left on 4:3 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved right on 4:4 cell
+GAME: player moved right on 4:5 cell
+GAME: player moved right on 4:6 cell
+GAME: player moved down on 5:6 cell
+GAME: player moved down on 6:6 cell
+GAME: player moved right on 6:7 cell
+GAME: player moved up on 5:7 cell
+GAME: player moved up on 4:7 cell
+GAME: picked up an armor point
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: Data has been saved!
+GAME: player moved down on 3:2 cell
+GAME: player moved right on 3:3 cell
+GAME: player moved right on 3:4 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved down on 4:4 cell
+ERROR: player try to move on wall-cell
+GAME: player moved right on 4:5 cell
+GAME: player moved right on 4:6 cell
+GAME: player moved right on 4:7 cell
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+GAME: player moved left on 4:6 cell
+GAME: player moved left on 4:5 cell
+GAME: player moved down on 5:5 cell
+GAME: player moved down on 6:5 cell
+GAME: player moved down on 7:5 cell
+GAME: player moved down on 8:5 cell
+GAME: player moved left on 8:4 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved right on 8:5 cell
+GAME: player moved right on 8:6 cell
+GAME: player was kicked
+ERROR: player try to move on wall-cell
+ERROR: player try to move on wall-cell
+GAME: player moved left on 8:5 cell
+GAME: player moved up on 7:5 cell
+GAME: player moved up on 6:5 cell
+GAME: player moved right on 6:6 cell
+GAME: player moved right on 6:7 cell
+GAME: player was kicked
+GAME: player moved right on 6:8 cell
+GAME: player moved up on 5:8 cell
+GAME: player moved up on 4:8 cell
+GAME: picked up a coin
+GAME: player moved right on 4:9 cell
+GAME: player picked up a heal point
+GAME: player moved down on 5:9 cell
+GAME: picked up an armor point
+GAME: player moved down on 6:9 cell
+GAME: player moved down on 7:9 cell
+GAME: player moved down on 8:9 cell
+GAME: player moved down on 9:9 cell
+GAME: player moved left on 9:8 cell
+GAME: player moved left on 9:7 cell
+GAME: player moved left on 9:6 cell
+GAME: player moved left on 9:5 cell
+GAME: Uploading error in: file saving.txt have been changed!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player moved down on 1:1 cell
+GAME: player picked up a heal point
+GAME: player moved right on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: picked up a coin
+GAME: Data has been saved!
+GAME: player moved right on 2:3 cell
+GAME: player moved right on 2:4 cell
+GAME: picked up a coin
+GAME: player moved down on 3:4 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved left on 3:3 cell
+GAME: player moved left on 3:2 cell
+GAME: player moved down on 4:2 cell
+GAME: player moved down on 5:2 cell
+GAME: player was kicked
+ERROR: player try to move on wall-cell
+GAME: player moved right on 5:3 cell
+GAME: player moved right on 5:4 cell
+GAME: picked up an armor point
+GAME: player moved down on 6:4 cell
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: Uploading error in: file saving.txt have been changed!
+GAME: player moved down on 7:4 cell
+GAME: player moved down on 8:4 cell
+GAME: player moved left on 8:3 cell
+GAME: player moved left on 8:2 cell
+GAME: player moved up on 7:2 cell
+ERROR: player try to move on wall-cell
+GAME: player moved left on 7:1 cell
+GAME: player moved up on 6:1 cell
+ERROR: player try to move on wall-cell
+GAME: player moved left on 6:0 cell
+GAME: player moved up on 5:0 cell
+GAME: player moved up on 4:0 cell
+GAME: player moved right on 4:1 cell
+GAME: player moved right on 4:2 cell
+ERROR: player try to move on wall-cell
+GAME: player moved up on 3:2 cell
+GAME: player moved up on 2:2 cell
+GAME: player moved up on 1:2 cell
+GAME: player moved up on 0:2 cell
+GAME: player was kicked
+GAME: player moved right on 0:3 cell
+GAME: picked up a coin
+GAME: player moved right on 0:4 cell
+GAME: player moved right on 0:5 cell
+GAME: player moved right on 0:6 cell
+GAME: player moved down on 1:6 cell
+ERROR: player try to move on wall-cell
+GAME: player moved right on 1:7 cell
+GAME: player moved right on 1:8 cell
+GAME: picked up an armor point
+GAME: player moved down on 2:8 cell
+GAME: player moved down on 3:8 cell
+GAME: player moved down on 4:8 cell
+GAME: player moved left on 4:7 cell
+GAME: player moved left on 4:6 cell
+GAME: player moved up on 3:6 cell
+GAME: picked up an armor point
+GAME: Data has been saved!
+GAME: player moved right on 3:7 cell
+GAME: player was kicked
+GAME: player moved down on 4:7 cell
+GAME: player moved down on 5:7 cell
+GAME: player was kicked
+GAME: player moved down on 6:7 cell
+GAME: player moved right on 6:8 cell
+GAME: player moved up on 5:8 cell
+GAME: player picked up a heal point
+GAME: player moved right on 5:9 cell
+GAME: player moved up on 4:9 cell
+GAME: player was kicked
+GAME: Uploading error in: file saving.txt have been changed!
+STATUS: Game started!
+GAME: player moved right on 0:1 cell
+GAME: player picked up a heal point
+GAME: player moved right on 0:2 cell
+GAME: player moved down on 1:2 cell
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: Data has been uploaded!
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved down on 4:2 cell
+GAME: player was kicked
+GAME: player moved down on 5:2 cell
+GAME: player moved left on 5:1 cell
+GAME: player moved left on 5:0 cell
+GAME: player moved up on 4:0 cell
+GAME: player picked up a heal point
+GAME: player moved right on 4:1 cell
+GAME: player moved up on 3:1 cell
+GAME: player picked up a heal point
+GAME: player moved up on 2:1 cell
+GAME: player moved up on 1:1 cell
+GAME: player moved left on 1:0 cell
+GAME: player was kicked
+GAME: Data has been saved!
+GAME: player moved right on 1:1 cell
+GAME: player moved right on 1:2 cell
+GAME: player moved down on 2:2 cell
+GAME: player moved down on 3:2 cell
+GAME: player moved down on 4:2 cell
+GAME: player moved down on 5:2 cell
+GAME: player moved down on 6:2 cell
+ERROR: player try to move on wall-cell
+GAME: player moved right on 6:3 cell
+GAME: player picked up a heal point
+GAME: player moved right on 6:4 cell
+GAME: picked up an armor point
+GAME: player moved right on 6:5 cell
+GAME: player moved up on 5:5 cell
+GAME: player moved up on 4:5 cell
+GAME: player was kicked
+GAME: player moved right on 4:6 cell
+GAME: player moved right on 4:7 cell
+GAME: player moved up on 3:7 cell
+GAME: picked up an armor point
+GAME: player moved right on 3:8 cell
+GAME: player was kicked
+GAME: player moved down on 4:8 cell
+GAME: player moved down on 5:8 cell
+GAME: picked up an armor point
+GAME: player moved right on 5:9 cell
+GAME: Data has been uploaded!
+GAME: player moved right on 1:1 cell
+GAME: player moved down on 2:1 cell
+GAME: player moved down on 3:1 cell
+GAME: player moved down on 4:1 cell

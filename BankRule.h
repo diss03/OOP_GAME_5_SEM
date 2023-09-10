@@ -8,7 +8,7 @@
 
 
 template<DIFFICULTY T>
-class Bank
+class BankRule
 {
 public:
     void operator()(EventCreator& ev_cr) {

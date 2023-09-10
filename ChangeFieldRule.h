@@ -6,9 +6,8 @@
 
 #include "random"
 
-
 template<DIFFICULTY T>
-class Teleport
+class ChangeFieldRule
 {
 public:
     void operator()(EventCreator& ev_cr) {
@@ -23,17 +22,13 @@ public:
         std::mt19937 gen(rd());
         std::uniform_int_distribution<> dist(1, width + height - (width + height) % (T * 5));
 
-        int count{};
-
         for (int i{}; i < height; i++) {
             for (int j{}; j < width; j++) {
                 if (dist(rd) == 1) {
                     if ((*cells)[i][j].GetObject() == Cell::COMMON && !(*cells)[i][j].GetActive()) {
-                        (*cells)[i][j].SetPlayersEvents(ev_cr.CreateTeleportEvent());
-                        (*cells)[i][j].SetObject(Cell::TELEPORT);
-                        count++;
-                        if (count == 2)
-                            return;
+                        (*cells)[i][j].SetPlayersEvents(ev_cr.CreateChangeFieldEvent());
+                        (*cells)[i][j].SetObject(Cell::CHANGEFIELD);
+                        return;
                     }
                 }
             }

@@ -4,6 +4,6 @@
 class CmdCommandReader : public CommandReader
 {
 public:
-	void SetStep(sf::RenderWindow*) override;
+	void SetStep(sf::RenderWindow*) final;
 };
 
